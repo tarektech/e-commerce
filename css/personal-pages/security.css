@@ -1,0 +1,127 @@
+:root{
+    --main-blue: #273c66;
+    --main-yellow: #f4bf00;
+    --active-label: #3a548a;
+
+}
+
+
+/****************************************************************/
+
+
+/* right side */
+
+#side-bar__container{
+    /* background-color: red; */
+    padding: 0 12px;
+    height: 566px;
+  }
+  
+#user-info{
+    /* width: 850px; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--main-yellow);
+    background-color: var(--main-blue);
+    /* background-color: red; */
+    
+}
+
+#user-info > h5{
+    font-size: 1.4rem;
+}
+
+.page-row{
+    width: 100%;
+    height: 500px;
+    border: #112753 3px solid;
+    background-color: #2c3333;
+  background-color: var(--main-blue);
+
+}
+
+/*  */
+#change-password{
+    color: lightgrey;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding-left: 5%;
+    margin-top: 2%;
+
+
+}
+
+.old-password{
+    /* background-color: rgb(47, 36, 79); */
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    height: 120px;
+}
+
+#old-password-label{
+    color: var(--main-yellow);
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: fit-content;
+    /* background-color: red; */
+}
+#old-password-input{
+    width: 400px;
+}
+
+#old-password-text{
+    color: white;
+    font-weight: 500;
+}
+
+/*  */
+
+.new-confirm{
+    display: flex;
+    /* background-color: rgb(47, 36, 79); */
+    margin-top: 2%;
+    display: flex;  
+    justify-content: space-evenly;
+    height: 120px;
+    
+}
+
+
+#new-confirm-password-label{
+    color: var(--main-yellow);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+#new-confirm-password-input{
+    width: 400px;
+}
+
+#new-confirm-password-text{
+    color: white;
+    font-weight: 500;
+}
+
+/*  */
+
+#save-btn{
+    width: 100px;
+    height: 50px;
+    background-color: var(--main-yellow);
+    border: 1px solid white;
+    color: var(--main-blue);
+    font-weight: 500;
+    text-align: center;
+    margin-left: 75%;
+    margin-top: 6%;
+}
+
+#save-btn:hover{
+    color: white;
+}   

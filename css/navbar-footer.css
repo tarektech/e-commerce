@@ -1,0 +1,244 @@
+/* navbar */
+:root {
+  --icons-borders: #588157;
+  --icon-hover: #3a5a40;
+  --menu-navbar: #faedcd;
+  --font-color: #444444;
+  --light-font: #394d49;
+}
+#logo-container {
+  /* the code were at the html */
+  height: 80px;
+  /* background-color: red; */
+}
+
+.top-page {
+  background-color: var(--menu-navbar);
+  height: 80px;
+}
+
+#logo {
+  padding-left: 5%;
+  height: 80px;
+  width: 240px;
+}
+
+.searchbar {
+  margin-top: 22px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  border: 1px #273c66 solid;
+  background-color: white;
+}
+
+#serchbar {
+  width: 100%;
+  border: none;
+}
+#search-btn {
+  text-decoration: none;
+  list-style-type: none;
+  color: #273c66;
+}
+
+#search-btn:hover {
+  color: #fff;
+}
+
+.searchbar button {
+  width: 130px;
+  border: #f4bf00;
+  color: #273c66;
+  background-color: #f4bf00;
+}
+
+.searchbar button:hover {
+  color: #fff;
+}
+
+.singin-singup {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.singin-singup button {
+  width: 90px;
+  height: 35px;
+  background-color: #f4bf00;
+  color: #273c66;
+  border-radius: 15px;
+  border: #f4bf00 1px solid;
+  margin-right: 1rem;
+}
+
+.singin-singup button:hover {
+  color: #fff;
+}
+
+/* tarek code */
+
+.nav-contaienr {
+  display: flex;
+  justify-content: space-between;
+}
+
+.singin-singup > a {
+  margin-right: 1rem;
+}
+
+.nav-contaienr-small {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-container {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #logo {
+    height: 80px;
+    width: 180px;
+  }
+  #navbar-normal__screens {
+    display: none;
+  }
+  .nav-contaienr {
+    display: none;
+  }
+  .top-page {
+    height: 190px;
+  }
+  .nav-contaienr-small {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 190px;
+  }
+  .nav-top-small {
+    display: flex;
+  }
+  .singin-singup {
+    margin-left: auto;
+  }
+  .searchbar {
+    width: 80%;
+    margin: 0 auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .navbar-toggler {
+    margin-left: 1rem;
+  }
+  #hamburger-menu-icon {
+    /* background-color: red; */
+    position: absolute;
+    /* z-index: 1; */
+  }
+  .marke-color {
+    display: flex;
+    flex-direction: column;
+    background-color: #394d49;
+  }
+  .marke-color > .nav-item > .nav-link {
+    color: var(--menu-navbar);
+  }
+  #ham-icon {
+    background-color: var(--light-font);
+  }
+}
+/*  */
+.fa-magnifying-glass {
+  align-self: center;
+  padding: 10px 5px;
+  color: #f4bf00;
+}
+
+.user-name {
+  color: #f4bf00;
+  text-decoration: none;
+}
+
+.singin-singup {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.user-name:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.fa-heart {
+  color: #f4bf00;
+}
+
+.fa-heart:hover {
+  color: #fff;
+}
+
+.fa-cart-shopping {
+  color: #f4bf00;
+}
+
+.fa-cart-shopping:hover {
+  color: #fff;
+}
+
+/****/
+/* footer */
+
+.footer {
+  margin-top: 5%;
+  background-color: #273c66;
+}
+
+.footer-color-fonts {
+  color: #fff;
+}
+
+.Terms-Politics {
+  margin-top: 12%;
+}
+
+.Terms-Politics li {
+  padding: 3%;
+  color: #f4bf00;
+  list-style-type: none;
+}
+
+.Terms-Politics li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.Terms-Politics li a:hover {
+  color: #f4bf00;
+}
+
+.footer-line {
+  background-color: #f4bf00;
+  width: 100%;
+  height: 2px;
+}
+
+.Social-media {
+  font-size: 40px;
+  padding-left: 8%;
+}
+
+.fa-facebook,
+.fa-square-instagram,
+.fa-square-twitter {
+  color: #fff;
+}
+
+.fa-facebook:hover,
+.fa-square-instagram:hover,
+.fa-square-twitter:hover {
+  color: #f4bf00;
+}

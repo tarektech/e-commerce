@@ -1,0 +1,176 @@
+:root {
+  --main-blue: #273c66;
+  --main-yellow: #f4bf00;
+  --active-label: #3a548a;
+}
+#side-bar__container{
+  /* background-color: red; */
+  padding: 0 12px;
+  height: 566px;
+}
+
+#user-info {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--main-yellow);
+  background-color: var(--main-blue);
+  /* background-color: red; */
+}
+
+#user-info > h5{
+  font-size: 1.4rem;
+}
+
+.page-row {
+  width: 100%;
+  height: 500px;
+  border: #112753 3px solid;
+  background-color: var(--main-blue);
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/*  */
+#btn-row {
+  /* background-color: red; */
+  width: 150px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  position: absolute;
+  padding-right: 2rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.add-card__btn {
+  width: 130px;
+  height: 40px;
+  background-color: var(--main-yellow);
+  border: 0;
+  border-radius: 5px;
+  color: var(--main-blue);
+  font-weight: bolder;
+}
+.add-card__btn:hover {
+  background-color: var(--main-yellow);
+  color: white;
+}
+
+.card {
+  width: 310px;
+  height: 220px;
+  margin: 1rem;
+  background-color: var(--main-yellow);
+  background-color: white;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-icon {
+  margin-left: auto;
+}
+
+
+.card-number,
+.card-name {
+  color: var(--main-blue);
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-left: 5px;
+
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.footer-btn {
+  width: 90px;
+  height: 40px;
+  background-color: var(--main-yellow);
+  background-color: var(--main-blue);
+  color: var(--main-blue);
+  color: var(--main-yellow);
+  font-weight: 500;
+}
+
+.footer-btn:hover {
+  background-color: #866900;
+  color: white;
+}
+
+/* modal */
+
+.modal-content {
+  height: 600px;
+  width: 500px;
+  margin-top: 5rem;
+}
+
+.modal-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label{
+    margin-top: 20px;
+}
+
+.selecting{
+    display: flex;
+}
+ 
+.card-expiry{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-check{
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-check-label{
+    margin-left: 1rem;
+}
+
+.save-cancel{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#save,
+#cancel{
+    width: 90px;
+    height: 40px;
+    background-color: var(--main-yellow);
+    background-color: var(--main-blue);
+    color: var(--main-blue);
+    color: var(--main-yellow);
+    font-weight: 500;
+}
+
+#save:hover,
+#cancel:hover{
+    background-color: var(--main-yellow);
+    background-color: var(--main-blue);
+    color: white;
+}
+
+
+/* modal */

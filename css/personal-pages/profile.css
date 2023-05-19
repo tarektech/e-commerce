@@ -1,0 +1,211 @@
+:root {
+  --main-blue: #273c66;
+  --main-yellow: #f4bf00;
+  --active-label: #3a548a;
+  --suggested-color: #2c3333;
+
+
+  --icons-borders: #588157;
+  --icon-hover: #3a5a40;
+  --menu-navbar: #faedcd;
+  --font-color: #444444;
+  --light-font: #394d49;
+}
+
+/****************************************************************/
+
+/* right side */
+#side-bar__container {
+  /* background-color: red; */
+  padding: 0 12px;
+  height: 566px;
+}
+
+#user-info {
+  /* width: 850px; */
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--main-yellow);
+  background-color: var(--main-blue);
+  /* background-color: red; */
+}
+
+#user-info > h5 {
+  font-size: 1.4rem;
+}
+
+.page-row {
+  width: 100%;
+  height: 500px;
+  border: #112753 3px solid;
+  background-color: #2c3333;
+  background-color: var(--main-blue);
+  background-color: var(--menu-navbar);
+}
+
+#name-field {
+  margin-top: 4%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* #name-field input{
+    background-color: var(--main-blue);
+    background-color: var(--main-yellow);
+    background-color: white;
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+} */
+/* testing */
+
+#first-last {
+  width: 700px;
+  display: flex;
+}
+#first-last-span {
+  width: 200px;
+}
+
+#first-name,
+#last-name {
+  width: 250px;
+}
+/* testing */
+
+#email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#email > input:nth-child(1) {
+  border-right: none;
+}
+
+#email > input:nth-child(3) {
+  border-left: none;
+}
+
+#name-field input::placeholder {
+  text-align: center;
+  color: var(--main-yellow);
+  color: var(--main-blue);
+  font-weight: 500;
+}
+
+#email-phone {
+  height: 120px;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+#email-phone input {
+  margin: 20px 0;
+  background-color: var(--main-blue);
+  background-color: white;
+}
+
+#at-icon {
+  border: none;
+  height: 37.6px;
+  border-top: 0.8px #ced4da solid;
+  border-bottom: 0.8px #ced4da solid;
+  background-color: white;
+}
+
+#email-phone input::placeholder {
+  color: var(--main-yellow);
+  color: var(--main-blue);
+}
+
+#Birthday {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#Birthday label {
+  color: var(--main-yellow);
+  padding-left: 1rem;
+}
+
+#selectors {
+  display: flex;
+}
+
+#selectors select {
+  color: var(--main-yellow);
+  color: var(--main-blue);
+  background-color: var(--main-blue);
+  background-color: var(--main-yellow);
+  background-color: white;
+  margin: 0 12px;
+}
+
+#gender-form {
+  margin-top: 3rem;
+  margin-left: 5rem;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#gender-label {
+  display: flex;
+  /* background-color: red; */
+  padding-right: 5px;
+  color: var(--main-yellow);
+}
+.radio-form {
+  /* background-color: red; */
+  width: 250px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.radio-form label {
+  border-bottom: 1px solid var(--main-yellow);
+  border-top: 1px solid var(--main-yellow);
+  color: var(--main-yellow);
+
+  padding: 4px;
+}
+
+.radio-form label:hover {
+  border-left: 1px solid var(--main-yellow);
+  border-right: 1px solid var(--main-yellow);
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+}
+
+.radio-input {
+  height: 1rem;
+  width: 1rem;
+}
+
+#save-btn {
+  width: 100px;
+  height: 50px;
+  margin-top: 0rem;
+  margin-left: 40rem;
+  background-color: var(--main-yellow);
+  color: var(--main-blue);
+  font-weight: 600;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#save-btn:hover {
+  background-color: var(--main-yellow);
+  color: white;
+}

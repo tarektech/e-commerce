@@ -1,0 +1,377 @@
+/* logn-page */
+/* this file for */
+/*
+ after-signin.html
+ Login-page.html
+ */
+
+/* 2-120 */
+
+.bk-login-color {
+    background-color: #f4bf00;
+    width: 100%;
+    height: 800px;
+}
+
+.container-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.box-mian {
+    padding: 1%;
+    background-color: #fff;
+    width: 400px;
+    height: 575px;
+    display: flex;
+    flex-direction: column;
+    border: #fff 1px solid;
+    border-radius: 5%;
+}
+
+.text-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-text input {
+    margin: 10px;
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #f4bf00;
+}
+
+.rember-forget {
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#forget {
+    font-size: 14px;
+}
+
+#forget:hover {
+    color: #f4bf00;
+}
+
+.login-pos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-btn {
+    margin-top: 5%;
+    background-color: #f4bf00;
+    text-align: center;
+    color: black;
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+}
+
+.login-btn:hover {
+    color: #fff;
+}
+
+.fa-right-to-bracket {
+    padding-left: 5%;
+}
+
+#login-with {
+    text-align: center;
+    margin-top: 5%;
+    border-bottom: 1px #f4bf00 solid;
+}
+
+.social-media-btn {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-media-icon {
+    margin-top: 5%;
+    width: 50px;
+    height: 50px;
+    background-color: #f4bf00;
+    border: none;
+}
+
+.social-media-icon:hover {
+    color: #fff;
+}
+
+.sign-up {
+    padding-top: 10%;
+    font-size: 14px;
+}
+
+.sign-up a:hover {
+    color: #f4bf00;
+}
+
+
+/*  */
+
+.grander {
+    display: flex;
+    width: 250px;
+    justify-content: flex-start;
+    /* background-color: red; */
+    /* justify-content: flex-start; */
+}
+
+#grander-radio {
+    width: 15px;
+}
+
+#text-grander {
+    font-size: 20px;
+    padding-top: 4%;
+}
+
+.box-mian-seller {
+    padding: 1%;
+    background-color: #fff;
+    width: 400px;
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    border: #fff 1px solid;
+    border-radius: 5%;
+}
+
+
+/* droop */
+
+.drop-profile {
+    background-color: #f4bf00;
+    width: 150px;
+    height: 170px;
+    position: absolute;
+    right: 315px;
+    top: 60px;
+    display: none;
+}
+
+.text-pro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-pro a {
+    padding: 5%;
+    text-decoration: none;
+    color: #273c66;
+}
+
+.text-pro a:hover {
+    color: #fff;
+}
+
+
+/*  */
+
+
+/* main page  */
+
+
+.fa-cart-shopping {
+    color: #f4bf00;
+    margin-right: 1rem;
+}
+
+.fa-cart-shopping:hover {
+    color: #fff;
+}
+
+.marke {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marke-color a {
+    color: #273c66;
+}
+
+.marke-color a:hover {
+    color: #f4bf00;
+}
+/*  */
+.marke-ps {
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.marke-main-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 5px;
+}
+
+.marke-main-photo img {
+    padding: 10px 10px;
+    border: #f4bf00 0.1px solid;
+    border-radius: 100%;
+    max-height: 100px;
+}
+
+.marke-main-photo span {
+    padding-top: 10%;
+    color: #273c66;
+}
+
+.marke-main-photo span:hover {
+    color: #f4bf00;
+}
+
+.cont-color {
+    border-radius: 1%;
+    margin-top: 5%;
+    background-color: #273c66;
+    /* width: 100%; */
+    /* height: 450px; */
+}
+
+.fa-sellsy {
+    color: #f4bf00;
+}
+
+.best-selling {
+    padding-top: 25px;
+    color: #f4bf00;
+    padding-left: 10px;
+}
+
+.line-seller {
+    width: 100%;
+    height: 2px;
+    background-color: #f4bf00;
+}
+
+.cards-seller {
+    margin: 5%;
+}
+
+.price-cart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-cart-plus {
+    font-size: 25px;
+    color: #f4bf00;
+}
+
+.fa-cart-plus:hover {
+    color: #273c66;
+}
+
+#about-items {
+    color: #f4bf00;
+}
+
+.delevery-favo {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa-heart {
+    font-size: 20px;
+    padding-top: 3px;
+    color: #f4bf00;
+}
+
+.fa-heart:hover {
+    /* background-color: red; */
+    color: red;
+    /* border: #f4bf00 1px solid; */
+}
+
+#delevery-box {
+    text-align: center;
+    background-color: #f4bf00;
+    color: #273c66;
+    width: 130px;
+    height: 30px;
+    border-radius: 100px;
+}
+
+
+/* footer */
+
+.footer {
+    margin-top: 5%;
+    background-color: #273c66;
+}
+
+.footer-color-fonts {
+    color: #fff;
+}
+
+.Terms-Politics {
+    margin-top: 12%;
+}
+
+.Terms-Politics li {
+    padding: 3%;
+    color: #f4bf00;
+    list-style-type: none;
+}
+
+.Terms-Politics li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.Terms-Politics li a:hover {
+    color: #f4bf00;
+}
+
+.footer-line {
+    background-color: #f4bf00;
+    width: 100%;
+    height: 2px;
+}
+
+.Social-media {
+    font-size: 40px;
+    padding-left: 8%;
+}
+
+.fa-facebook,
+.fa-square-instagram,
+.fa-square-twitter {
+    color: #fff;
+}
+
+.fa-facebook:hover,
+.fa-square-instagram:hover,
+.fa-square-twitter:hover {
+    color: #f4bf00;
+}
+
+#item-link {
+    text-decoration: none;
+    list-style-type: none;
+}

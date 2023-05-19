@@ -1,0 +1,189 @@
+/* item 5 */
+#btn6{
+    background-color:#f4bf00;
+    color:#273c66;
+    border-color: #f4bf00;
+    border-radius: 3px;
+
+}
+.star{
+    color: #f4bf00;  
+}
+.star:hover{
+    color: #273c66;
+}
+
+.shopping_cart{
+    color: #f4bf00;
+    cursor: pointer;
+
+}
+.shopping_cart:hover{
+    color: red;
+}
+
+#scroll{
+    width: 250px;
+    /*! hieght for the scroll */
+    height: 500px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    overflow-y: scroll;
+}
+
+.test{
+    height: 1000px;
+    
+}
+#text1{
+    width: 30%;
+    border-color: #f4bf00;
+    border-radius: 20%;
+    
+}
+#expand{
+    color: #f4bf00;
+}
+#btn7{
+    background-color: #f4bf00;
+    color: #273c66;
+    margin-left:5% ;
+}
+.fav2{
+    color: #f4bf00;
+}
+
+.fav2:hover{
+    color: red;
+    
+}
+
+#drop1{
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: red; */
+    margin-top: 4rem;
+    padding-right: 2rem;
+}
+
+
+/* tarek work */
+
+.dropdown{
+    margin-bottom: 1rem;
+}
+
+/* tarek work */
+
+.cards-item{
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 900px;
+}
+
+.card{
+    height: 400px !important;
+    width: 240px;
+    margin: 2rem 7px 0px 0px;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: blanchedalmond; */
+}
+
+.fav-icon{
+    margin-left: auto;
+}
+
+.fav-icon span{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.fav-icon span:hover{
+    color: red;
+}
+
+.card-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-img > img{
+    width: 200px;
+    height: 240px;
+}
+
+.description-stars-price span{
+    font-size: 0.8rem;
+}
+.price-tag-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+}
+.price-tag-icon > span{
+    font-size: 1.5rem;
+}
+
+
+/* footer */
+
+/* .footer {
+    margin-top: 5%;
+    background-color: #273c66;
+}
+
+.footer-color-fonts {
+    color: #fff;
+}
+
+.Terms-Politics {
+    margin-top: 12%;
+}
+
+.Terms-Politics li {
+    padding: 3%;
+    color: #f4bf00;
+    list-style-type: none;
+}
+
+.Terms-Politics li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.Terms-Politics li a:hover {
+    color: #f4bf00;
+}
+
+.footer-line{
+    background-color: #f4bf00;
+    width: 100%;
+    height: 2px;
+}
+
+.Social-media{
+    font-size: 50px;
+    padding-left: 8%;
+}
+
+.fa-facebook, .fa-square-instagram, .fa-square-twitter{
+    color: #fff;
+}
+
+
+
+.fa-facebook:hover, .fa-square-instagram:hover, .fa-square-twitter:hover{
+    color: #f4bf00;
+
+}
+
+
+                       */
