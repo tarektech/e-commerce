@@ -1,108 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="/css/personal-pages/profile.css" type="text/css" />
-    <link rel="stylesheet" href="/css/personal-pages/sidebar.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="/css/personal-pages/profile.css"
+      type="text/css" />
+    <link
+      rel="stylesheet"
+      href="/css/personal-pages/sidebar.css"
+      type="text/css" />
     <link rel="stylesheet" href="/css/navbar-footer.css" type="text/css" />
-
 
     <title>Profile</title>
     <script>
-        $(document).ready(function () {
-          $('#account').hover(function () {
-            $('.drop-profile').slideToggle();
-          });
+      $(document).ready(function () {
+        $('#account').click(function () {
+          $('.drop-profile').slideToggle();
         });
-      </script>
-</head>
+      });
+    </script>
+  </head>
 
-<body>
+  <body>
     <!-- main navbar -->
     <div class="container">
-        <div class="col-sm-12 top-page">
-          <div class="row">
-            <div class="col-sm-4">
-              <a href="/after-signin.html"><img id="logo" src="/img/logo.png" alt="logo" style="height: 80px; max-height: 80px" /></a>
+      <div class="col-sm-12 top-page">
+        <div class="row">
+          <div class="col-sm-4">
+            <a href="/signin-signout/after-signin.html"
+              ><img
+                id="logo"
+                src="/img/logo.png"
+                alt="logo"
+                style="height: 80px; max-height: 80px"
+            /></a>
           </div>
-            <div class="col-sm-4">
-              <form class="searchbar">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input id="serchbar" type="text" placeholder="Search here" />
-                <button type="button">
-                  <a id="search-btn" href="/majd2/Logo-Shop/search-page.html"
-                    ><b>Search</b></a
-                  >
-                </button>
-              </form>
-            </div>
-            <div class="col-sm-4 singin-singup">
-              <a href="/signin-singout/Login-page.html">
-                  <a id="account" href="#" class="user-name"><b>User Name</b> <i class="fa-solid fa-user"></i></a>
-              </a>
-              <a href="#"><i class="fa-solid fa-heart"></i></a>
-              <a href="/majd2/Logo-Shop/index.html"
-                ><i class="fa-solid fa-cart-shopping"></i
+          <div class="col-sm-4">
+            <form class="searchbar">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input id="serchbar" type="text" placeholder="Search here" />
+              <button type="button">
+                <a id="search-btn" href="/item-pages/search-page.html"
+                  ><b>Search</b></a
+                >
+              </button>
+            </form>
+          </div>
+          <div class="col-sm-4 singin-singup">
+            <a href="/signin-singout/Login-page.html">
+              <a id="account" href="#" class="user-name"
+                ><b>User Name</b> <i class="fa-solid fa-user"></i
               ></a>
-            </div>
+            </a>
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
+            <a href="/item-pages/card-item.html"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
           </div>
         </div>
       </div>
+    </div>
     <!--  -->
 
     <div class="container" id="side-bar__container">
-        <div class="col-sm-12">
-            <div class="row" id="page-main__row">
-                <div class="col-sm-3">
-                    <div class="side-nav">
-                        <span id="username">username</span>
-                        <ul class="nav" id="ul-sidenav">
-                            <li class="lists-side" style="background-color: #3a548a">
-                                <a href="Profile.html" class="nav-link link-side" style="color: #f4bf00">
-                                    <i class="fa-regular fa-user fa-sm"></i> Profile
-                                </a>
-                            </li>
-                            <li class="lists-side">
-                                <a href="orders.html" class="nav-link link-side">
-                                    <i class="bi bi-truck"></i> Orders
-                                </a>
-                            </li>
-                            <li class="lists-side">
-                                <a href="cards.html" class="nav-link link-side">
-                                    <i class="fa-regular fa-credit-card"></i> card
-                                </a>
-                            </li>
-                            <li class="lists-side">
-                                <a href="address.html" class="nav-link link-side">
-                                    <i class="fa-regular fa-address-card"></i> address
-                                </a>
-                            </li>
-                            <li class="lists-side">
-                                <a href="security.html" class="nav-link link-side">
-                                    <i class="bi bi-shield-shaded"></i> security
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <div class="col-sm-12">
+        <div class="row" id="page-main__row">
+          <div class="col-sm-3">
+            <div class="side-nav">
+              <span id="username">username</span>
+              <ul class="nav" id="ul-sidenav">
+                <li class="lists-side" style="background-color: #3a548a">
+                  <a
+                    href="Profile.html"
+                    class="nav-link link-side"
+                    style="color: #f4bf00">
+                    <i class="fa-regular fa-user fa-sm"></i> Profile
+                  </a>
+                </li>
+                <li class="lists-side">
+                  <a href="orders.html" class="nav-link link-side">
+                    <i class="bi bi-truck"></i> Orders
+                  </a>
+                </li>
+                <li class="lists-side">
+                  <a href="cards.html" class="nav-link link-side">
+                    <i class="fa-regular fa-credit-card"></i> card
+                  </a>
+                </li>
+                <li class="lists-side">
+                  <a href="address.html" class="nav-link link-side">
+                    <i class="fa-regular fa-address-card"></i> address
+                  </a>
+                </li>
+                <li class="lists-side">
+                  <a href="security.html" class="nav-link link-side">
+                    <i class="bi bi-shield-shaded"></i> security
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-                <div class="col-sm-9">
-                    <div id="user-info">
-                        <h5><i class="fa-regular fa-user fa-sm"></i>Profile</h5>
-                    </div>
+          <div class="col-sm-9">
+            <div id="user-info">
+              <h5><i class="fa-regular fa-user fa-sm"></i>Profile</h5>
+            </div>
 
-                    <div class="page-row">
-                        <div id="name-field">
-                            <!-- <input
+            <div class="page-row">
+              <div id="name-field">
+                <!-- <input
                   type="text"
                   class="form-control"
                   name="FirstName"
@@ -114,98 +137,122 @@
                   placeholder="LastName" />
                    -->
 
-                            <div class="input-group" id="first-last">
-                                <span class="input-group-text" id="first-last-span">First and last name</span>
-                                <input type="text" id="first-name" class="form-control ">
-                                <input type="text" id="last-name" class="form-control">
-                            </div>
-                        </div>
+                <div class="input-group" id="first-last">
+                  <span class="input-group-text" id="first-last-span"
+                    >First and last name</span
+                  >
+                  <input type="text" id="first-name" class="form-control" />
+                  <input type="text" id="last-name" class="form-control" />
+                </div>
+              </div>
 
-                        <div id="email-phone" class="">
-                            <div id="email" class="input-group">
-                                <input type="text" class="form-control" name="email" placeholder="email" />
-                                <span class="input-group-text" id="at-icon">@</span>
-                                <input type="text" class="form-control" placeholder="hotmail , gmail" />
-                            </div>
+              <div id="email-phone" class="">
+                <div id="email" class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="email"
+                    placeholder="email" />
+                  <span class="input-group-text" id="at-icon">@</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="hotmail , gmail" />
+                </div>
 
+                <input
+                  type="text"
+                  class="form-control"
+                  name="phoneNumber"
+                  id="phone-number"
+                  placeholder="phone Number" />
+              </div>
 
-                            <input type="text" class="form-control" name="phoneNumber" id="phone-number" placeholder="phone Number" />
-                        </div>
-
-                        <div id="Birthday">
-                            <label for="" class="form-label">Birthday</label>
-                            <div id="selectors">
-                                <select class="form-select" name="Day" id="Day">
+              <div id="Birthday">
+                <label for="" class="form-label">Birthday</label>
+                <div id="selectors">
+                  <select class="form-select" name="Day" id="Day">
                     <option value="">Day</option>
                   </select>
-                                <select class="form-select" name="Month" id="Month">
+                  <select class="form-select" name="Month" id="Month">
                     <option value="">Month</option>
                   </select>
-                                <select class="form-select" name="year" id="year">
+                  <select class="form-select" name="year" id="year">
                     <option value="">Year</option>
                   </select>
-                            </div>
-                        </div>
+                </div>
+              </div>
 
-                        <div id="gender-form">
-                            <label id="gender-label">Gender</label>
-                            <div class="radio-form">
-                                <label for="">male</label>
-                                <input class="radio-input" type="radio" />
-                                <label for="">female</label>
-                                <input class="radio-input" type="radio" />
-                            </div>
-                        </div>
-                        <button type="button" class="btn btn-primary" id="save-btn">
+              <div id="gender-form">
+                <label id="gender-label">Gender</label>
+                <div class="radio-form">
+                  <label for="">male</label>
+                  <input class="radio-input" type="radio" />
+                  <label for="">female</label>
+                  <input class="radio-input" type="radio" />
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary" id="save-btn">
                 save
               </button>
-                    </div>
-                </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- footer -->
     <div class="footer">
-        <div class="container">
-            <div class="col-sm-12">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <a href="/index.html"><img src="/img/logo.png" alt="logo" /></a>
-                        <h3 class="footer-color-fonts"><b>You Can By</b></h3>
-                        <div class="footer-line"></div>
-                        <div class="payment-math">
-                            <img src="/img/troy-logo-transparent.webp" alt="" style="max-width: 100px" />
-                            <img src="/img/footer-master-card.webp" alt="" style="max-width: 100px" />
-                            <img src="/img/footer-visa-black.webp" alt="" style="max-width: 100px" />
-                            <img src="/img/footer-amex.webp" alt="" style="max-width: 100px" />
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <ul class="Terms-Politics">
-                            <li><a href="#">Terms of opening a store</a></li>
-                            <li><a href="#">Politics and Privacy</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <ul class="Terms-Politics">
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Connect us</a></li>
-                            <li><a href="#">05555555555</a></li>
-                            <li><a href="#">example@.com</a></li>
-                        </ul>
-                        <div class="footer-line"></div>
-                        <div class="Social-media">
-                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="col-sm-12">
+          <div class="row">
+            <div class="col-sm-4">
+              <a href="/index.html"><img src="/img/logo.png" alt="logo" /></a>
+              <h3 class="footer-color-fonts"><b>You Can By</b></h3>
+              <div class="footer-line"></div>
+              <div class="payment-math">
+                <img
+                  src="/img/troy-logo-transparent.webp"
+                  alt=""
+                  style="max-width: 100px" />
+                <img
+                  src="/img/footer-master-card.webp"
+                  alt=""
+                  style="max-width: 100px" />
+                <img
+                  src="/img/footer-visa-black.webp"
+                  alt=""
+                  style="max-width: 100px" />
+                <img
+                  src="/img/footer-amex.webp"
+                  alt=""
+                  style="max-width: 100px" />
+              </div>
             </div>
-        </div>
-    </div>
-</body>
+            <div class="col-sm-4">
+              <ul class="Terms-Politics">
+                <li><a href="#">Terms of opening a store</a></li>
+                <li><a href="#">Politics and Privacy</a></li>
+              </ul>
+            </div>
 
+            <div class="col-sm-4">
+              <ul class="Terms-Politics">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Connect us</a></li>
+                <li><a href="#">05555555555</a></li>
+                <li><a href="#">example@.com</a></li>
+              </ul>
+              <div class="footer-line"></div>
+              <div class="Social-media">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
