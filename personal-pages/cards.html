@@ -30,7 +30,7 @@
       rel="stylesheet"
       href="/css/personal-pages/sidebar.css"
       type="text/css" />
-    <link rel="stylesheet" href="/css/navbar-footer.css" type="text/css" />
+    <link rel="stylesheet" href="/css/navbar-footer.css" type="text/css" media="all" />
 
     <title>bank cards page</title>
     <script>
@@ -47,37 +47,67 @@
     <div class="container">
       <div class="col-sm-12 top-page">
         <div class="row">
-          <div class="col-sm-4">
-            <a href="/signin-signout/after-signin.html"
-              ><img
-                id="logo"
-                src="/img/logo.png"
-                alt="logo"
-                style="height: 80px; max-height: 80px"
-            /></a>
-          </div>
-          <div class="col-sm-4">
-            <form class="searchbar">
+          <div class="nav-contaienr">
+            <div id="logo-container">
+              <a href="../index.html"
+                ><img id="logo" src="/img/logo.png" alt="logo"
+              /></a>
+            </div>
+            <div class="searchbar">
               <i class="fa-solid fa-magnifying-glass"></i>
               <input id="serchbar" type="text" placeholder="Search here" />
+
               <button type="button">
                 <a id="search-btn" href="/item-pages/search-page.html"
                   ><b>Search</b></a
                 >
               </button>
-            </form>
-          </div>
-          <div class="col-sm-4 singin-singup">
-            <a href="/Login-page.html">
-              <a id="account" href="#" class="user-name"
-                ><b>User Name</b> <i class="fa-solid fa-user"></i
+            </div>
+            <div class="singin-singup">
+              <a href="/signin-singout/Login-page.html">
+                <a id="account" href="#" class="user-name"
+                  ><b>User Name</b> <i class="fa-solid fa-user"></i
+                ></a>
+              </a>
+              <a href="#"><i class="fa-solid fa-heart"></i></a>
+              <a href="../item-pages/card-item.html"
+                ><i class="fa-solid fa-cart-shopping"></i
               ></a>
-            </a>
-            <a href="#"><i class="fa-solid fa-heart"></i></a>
-            <a href="/item-pages/card-item.html"
-              ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
+            </div>
           </div>
+
+          <div class="nav-contaienr-small">
+            <div class="container-fluid nav-top-small">
+              <div id="logo-container">
+                <a href="index.html"
+                  ><img id="logo" src="/img/logo.png" alt="logo"
+                /></a>
+              </div>
+
+              <div class="singin-singup">
+                <a href="/signin-singout/Login-page.html">
+                  <a id="account" href="#" class="user-name"
+                    ><b>User Name</b> <i class="fa-solid fa-user"></i
+                  ></a>
+                </a>
+                <a href="#"><i class="fa-solid fa-heart"></i></a>
+                <a href="../item-pages/card-item.html"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
+            </div>
+            <div class="searchbar">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input id="serchbar" type="text" placeholder="Search here" />
+
+              <button type="button">
+                <a id="search-btn" href="/item-pages/search-page.html"
+                  ><b>Search</b></a
+                >
+              </button>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>

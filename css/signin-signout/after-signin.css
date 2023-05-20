@@ -268,6 +268,7 @@ color: #fff;
     align-items: center;
 }
 
+
 .marke-color a {
     color: #273c66;
 }
@@ -280,6 +281,15 @@ color: #fff;
     display: flex;
     justify-content: space-evenly;
 }
+
+@media screen and (max-width: 768px){
+    .marke-ps {
+        overflow: hidden;
+    }
+    .marke{
+        display: none;
+    }
+  }
 
 .marke-main-photo {
     display: flex;

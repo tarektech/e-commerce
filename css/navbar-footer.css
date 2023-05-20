@@ -13,7 +13,8 @@
 }
 
 .top-page {
-  background-color: var(--menu-navbar);
+  background-color: #1a1a1a;
+  background-color: #273c66;
   height: 80px;
 }
 
@@ -40,6 +41,7 @@
   text-decoration: none;
   list-style-type: none;
   color: #273c66;
+  /* color: var(--menu-navbar) */
 }
 
 #search-btn:hover {
@@ -51,6 +53,7 @@
   border: #f4bf00;
   color: #273c66;
   background-color: #f4bf00;
+  /* background-color: var(--icons-borders); */
 }
 
 .searchbar button:hover {
@@ -67,7 +70,9 @@
   width: 90px;
   height: 35px;
   background-color: #f4bf00;
+  /* background-color: var(--icons-borders); */
   color: #273c66;
+  /* color: var(--menu-navbar); */
   border-radius: 15px;
   border: #f4bf00 1px solid;
   margin-right: 1rem;
@@ -85,20 +90,23 @@
 }
 
 .singin-singup > a {
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 
 .nav-contaienr-small {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .nav-container {
     min-width: 100%;
   }
-}
+} */
 
 @media screen and (max-width: 768px) {
+  .nav-container {
+    min-width: 100%;
+  }
   #logo {
     height: 80px;
     width: 180px;
@@ -109,23 +117,27 @@
   .nav-contaienr {
     display: none;
   }
+  /* hieght of navbar */
   .top-page {
-    height: 190px;
+    height: 150px;
   }
+  /* makeing the layout column for samll screens */
   .nav-contaienr-small {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 190px;
+    /* height: 140px;
+    background-color: red; */
   }
+  /* logo and buttons will be on same line  */
   .nav-top-small {
     display: flex;
   }
   .singin-singup {
     margin-left: auto;
   }
+  /* searchbar for small screens */
   .searchbar {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -133,13 +145,14 @@
   .navbar-toggler {
     margin-left: 1rem;
   }
+  /* lists that hidden at hamburger menu */
   #hamburger-menu-icon {
     /* background-color: red; */
     position: absolute;
     /* z-index: 1; */
   }
   .marke-color {
-    display: flex;
+    display: block;  /*! important */
     flex-direction: column;
     background-color: #394d49;
   }
@@ -149,6 +162,7 @@
   #ham-icon {
     background-color: var(--light-font);
   }
+  
 }
 /*  */
 .fa-magnifying-glass {
@@ -160,6 +174,9 @@
 .user-name {
   color: #f4bf00;
   text-decoration: none;
+}
+.user-name > b{
+    margin-right: 1rem;
 }
 
 .singin-singup {
@@ -194,6 +211,7 @@
 
 .footer {
   margin-top: 5%;
+  background-color: #1a1a1a;
   background-color: #273c66;
 }
 

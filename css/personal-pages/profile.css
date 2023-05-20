@@ -44,8 +44,8 @@
   height: 500px;
   border: #112753 3px solid;
   background-color: #2c3333;
-  background-color: var(--main-blue);
   background-color: var(--menu-navbar);
+  background-color: var(--main-blue);
 }
 
 #name-field {

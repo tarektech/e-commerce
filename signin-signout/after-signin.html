@@ -25,8 +25,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="/css/signin-signout/after-signin.css" type="text/css" />
-    <link rel="stylesheet" href="/css/navbar-footer.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="/css/signin-signout/after-signin.css"
+      type="text/css" />
+    <link rel="stylesheet" href="/css/navbar-footer.css" type="text/css" media="all" />
 
     <title>Welcome User</title>
     <script>
@@ -36,6 +39,7 @@
         });
       });
     </script>
+    <style></style>
   </head>
 
   <body>
@@ -43,29 +47,67 @@
     <div class="container">
       <div class="col-sm-12 top-page">
         <div class="row">
-          <div class="col-sm-4">
-            <a href="../index.html"><img id="logo" src="/img/logo.png" alt="logo" style="height: 80px; max-height: 80px" /></a>
-        </div>
-          <div class="col-sm-4">
-            <form class="searchbar">
+          <div class="nav-contaienr">
+            <div id="logo-container">
+              <a href="after-signin.html"
+                ><img id="logo" src="/img/logo.png" alt="logo"
+              /></a>
+            </div>
+            <div class="searchbar">
               <i class="fa-solid fa-magnifying-glass"></i>
               <input id="serchbar" type="text" placeholder="Search here" />
+
               <button type="button">
                 <a id="search-btn" href="/item-pages/search-page.html"
                   ><b>Search</b></a
                 >
               </button>
-            </form>
+            </div>
+            <div class="singin-singup">
+              <a href="/signin-singout/Login-page.html">
+                <a id="account" href="#" class="user-name"
+                  ><b>User Name</b> <i class="fa-solid fa-user"></i
+                ></a>
+              </a>
+              <a href="#"><i class="fa-solid fa-heart"></i></a>
+              <a href="../item-pages/card-item.html"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </div>
           </div>
-          <div class="col-sm-4 singin-singup">
-            <a href="/signin-singout/Login-page.html">
-                <a id="account" href="#" class="user-name"><b>User Name</b> <i class="fa-solid fa-user"></i></a>
-            </a>
-            <a href="#"><i class="fa-solid fa-heart"></i></a>
-            <a href="../item-pages/card-item.html"
-              ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
+
+          <div class="nav-contaienr-small">
+            <div class="container-fluid nav-top-small">
+              <div id="logo-container">
+                <a href="after-signin.html"
+                  ><img id="logo" src="/img/logo.png" alt="logo"
+                /></a>
+              </div>
+
+              <div class="singin-singup">
+                <a href="/signin-singout/Login-page.html">
+                  <a id="account" href="#" class="user-name"
+                    ><b>User Name</b> <i class="fa-solid fa-user"></i
+                  ></a>
+                </a>
+                <a href="#"><i class="fa-solid fa-heart"></i></a>
+                <a href="../item-pages/card-item.html"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
+            </div>
+            <div class="searchbar">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input id="serchbar" type="text" placeholder="Search here" />
+
+              <button type="button">
+                <a id="search-btn" href="/item-pages/search-page.html"
+                  ><b>Search</b></a
+                >
+              </button>
+            </div>
           </div>
+          
         </div>
       </div>
     </div>
@@ -213,8 +255,7 @@
             </div>
           </div>
 
-
-        <div class="col-sm-4">
+          <div class="col-sm-4">
             <div class="card cards-seller">
               <div class="delevery-favo">
                 <p id="delevery-box">Shipping is free</p>
@@ -589,9 +630,7 @@
         <div class="col-sm-12">
           <div class="row">
             <div class="col-sm-4">
-              <a href="../index.html"
-                ><img src="/img/logo.png" alt="logo"
-              /></a>
+              <a href="../index.html"><img src="/img/logo.png" alt="logo" /></a>
               <h3 class="footer-color-fonts"><b>You Can By</b></h3>
               <div class="footer-line"></div>
               <div class="payment-math">
