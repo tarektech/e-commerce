@@ -13,8 +13,8 @@
 }
 
 .top-page {
+ 
   background-color: #1a1a1a;
-  background-color: #273c66;
   height: 80px;
 }
 
@@ -211,8 +211,8 @@
 
 .footer {
   margin-top: 5%;
-  background-color: #1a1a1a;
   background-color: #273c66;
+  background-color: #1a1a1a;
 }
 
 .footer-color-fonts {
