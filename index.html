@@ -26,68 +26,11 @@
       referrerpolicy="no-referrer" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <link rel="stylesheet" href="/css/style.css" type="text/css" />
+    <script src="js/script.js"></script>
     <title>shop</title>
   </head>
 
   <body>
-    <!-- main hader -->
-    <!-- <div class="container-fluid">
-        <div class="col-sm-12 top-main ">
-            <div class="row">
-                <div class="col-sm-3">
-                    <a href="#"><img id="logo" src="img/logo.png" alt="logo" style="height: 80px; max-height: 80px;"></a>
-                </div>
-
-                <div class="col-sm-6">
-                    <div class="searchbar">
-                        <input id="serchbar" type="text" placeholder="Search here" />
-                        <button>
-                     <a id="search-btn" href="">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                        </button>
-                    </div>
-                </div>
-
-                <div class="col-sm-3 singin-singup ">
-                    <a href="Login-page.html"><button type="submit"><b>Sign In</b> </button></a>
-                    <a href="signup-page-user.html"><button type="submit"><b>Sign Up</b></button></a>
-                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                </div>
-
-
-            </div>
-
-        </div>
-    </div> -->
-
-    <!-- end main hader -->
-
-    <!-- الماركات -->
-    <!-- <div class="col-sm-12 marke ">
-        <div class="row">
-            <nav class="navbar navbar-expand-sm">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#demo">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-                    <div class="collapse navbar-collapse" id="demo">
-                        <ul class="navbar-nav marke-color">
-                            <li class="nav-item"><a class="nav-link" href="#">Man</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Woman</a></li>
-                            <li class="nav-item"> <a class="nav-link" href="#">Girls-Boys</a></li>
-                            <li class="nav-item"> <a class="nav-link" href="#">PORTFLO</a></li>
-                            <li class="nav-item"> <a class="nav-link" href="#">Phones</a></li>
-                            <li class="nav-item"> <a class="nav-link" href="#">ELECTRONIC</a></li>
-                            <li class="nav-item"> <a class="nav-link" href="#">SPORTS&OUTDOOR</a></li>
-                            <li class="nav-item"> <a class="nav-link" href="#">New</a></li>
-
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div> -->
     <!-- أنتهاء الماركات -->
 
     <!-- main hadder after responsive-->
@@ -135,14 +78,15 @@
             <!-- logo image and the right buttons to make them on same side -->
             <div class="img-and-btn">
               <div class="navbar navbar-expand-lg">
-                <button
+                <!-- <button
                   id="hamburger-btn"
                   class="navbar-toggler"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#small-screen">
                   <span class="navbar-toggler-icon"></span>
-                </button>
+                </button> -->
+                <span id="open-menu" onclick="openclose()" style="font-size: 50px; color: chocolate">&#9776;</span>
                 <!-- hamburger icon for small screens  -->
               </div>
 
@@ -156,10 +100,10 @@
                 /></a>
               </div>
               <div class="singin-singup">
-                <a href="Login-page.html"
+                <a href="signin-signout/Login-page.html"
                   ><button type="submit"><b>Sign In</b></button></a
                 >
-                <a href="signup-page-user.html"
+                <a href="signin-signout/signup-page-user.html"
                   ><button type="submit"><b>Sign Up</b></button></a
                 >
                 <a href="#"><span class="fa-solid fa-cart-shopping"></span></a>
@@ -167,33 +111,38 @@
             </div>
             <!-- lists for small small screen -->
             <!-- wehn clicking on hamburger icon the list below will display -->
-            <div class="collapse navbar-collapse" id="small-screen">
-              <ul class="navbar nav marke-color">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Man</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Woman</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Girls-Boys</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">PORTFLO</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Phones</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">ELECTRONIC</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">SPORTS&OUTDOOR</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">New</a>
-                </li>
-              </ul>
+            <div  id="small-screen" class="menu">
+              <div id="side-menu">
+                <div class="closebtn-holder">
+                  <span class="closebtn" onclick="closemenu()">&times;</span>
+                </div>
+                <ul class="navbar nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Man</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Woman</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Girls-Boys</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">PORTFLO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Phones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ELECTRONIC</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">SPORTS&OUTDOOR</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">New</a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="searchbar">
               <input id="serchbar" type="text" placeholder="Search here" />
