@@ -1,78 +1,64 @@
-:root{
-    --main-blue: #273c66;
-    --main-yellow: #f4bf00;
-    --active-label: #3a548a;
+:root {
+  --main-blue: #273c66;
+  --main-yellow: #f4bf00;
+  --active-label: #3a548a;
 }
 
-
-#page-main__row{
-    /* background-color: blue; */
-    margin-top: 5rem;
-    height: 650px;
+#page-main__row {
+  margin-top: 5%;
+  height: 100%;
 }
 
-.side-nav{
-    width: 300px;
-    margin-left: 1rem;
-    height: 566px;
-    display: flex;
-    flex-direction: column;
-    background-color: #1a1a1a;
-    
-    
+.side-nav {
+  width: 300px;
+  margin-left: 1rem;
+  height: 566px;
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1a;
 }
 
-
-#user-info{
-    width: 100%;
+#user-info {
+  width: 100%;
 }
 
-#username{
-    height: 100px;
-    align-items: center;
-    background-color: #3d3d3d;
-    display: flex;
-    padding-left: 1rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid black;
-    color: white;
-    font-weight: bolder;
-    font-size: 1.5rem;
+#username {
+  height: 100px;
+  align-items: center;
+  background-color: #3d3d3d;
+  display: flex;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid black;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.5rem;
 }
 
-
-#ul-sidenav{
-    display: flex;
-    flex-direction: column;
-    
-}
-.link-side{
-    color: white;
-    font-weight: 500;
+#ul-sidenav {
+  display: flex;
+  flex-direction: column;
 }
 
-.link-side:hover{
-    color: var(--main-yellow);
+.row > * {
+  padding: 0;
 }
 
-.row > *{
-    padding: 0;
-}
+.lists-side {
+  background-color: var(--main-blue);
+  background-color: #1a1a1a;
 
-.lists-side{
-    background-color: var(--main-blue);
-    background-color: #1a1a1a;
-    height: 60px;
-    font-size: 1.6rem;
-    margin: 1rem 0;
-    display: flex;
-    flex-direction: column;
-    /* background-color: #f4bf00; */
+  height: 60px;
+  font-size: 1.6rem;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  /* background-color: #f4bf00; */
 }
-
 
 .fa-regular,
-.bi{
-    margin-right: 1rem;
-    padding-left: 1rem;
+.bi {
+  margin-right: 1rem;
+  padding-left: 1rem;
 }

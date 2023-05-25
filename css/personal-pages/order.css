@@ -4,39 +4,33 @@
     height: 566px;
   }
   
-#user-info{
-    /* width: 850px; */
-    width: 100%;
-    height: 50px;
+  #user-info {
+    height: 60px;
     display: flex;
     align-items: center;
     border: 1px solid black;
     padding-left: 1.2rem;
-    margin-bottom: 1rem;
-    color: var(--main-yellow);
-    background-color: var(--main-blue);
+    color: #F5C61B;
+    border-bottom: #F5C61B 2px solid;
     /* background-color: red; */
-}
-
-#user-info > h5{
-    font-size: 1.4rem;
-}
-
-
-.page-row{
-    width: 100%;
-    height: 500px;
-    border: #112753 3px solid;
-    background-color: var(--main-blue);
-    position: relative;
-    margin: 0;
-    padding: 0;
-}
+  }
+  
+  .page-row {
+    height: 566px;
+    width: 1100px;
+    /* border-left: lightgrey 3px solid; */
+    background-color: #f1f1f1;
+    background-color: #1a1a1a;
+    display: flex; 
+    flex-direction: column;
+  }
+  
 
 
 
 .month-order{
     border-bottom: 2px solid var(--main-yellow);
+    border-bottom: 2px solid white;
     margin-left: 1rem;
     margin-top: 1rem;
     padding: 6px 0;
@@ -44,6 +38,7 @@
     width: 100px;
     text-align: center;
     color: var(--main-yellow);
+    color: white;
     /* background-color: #395182; */
 }
 
@@ -55,6 +50,7 @@
     display: flex;
     /* background-color: red; */
     color: var(--main-yellow);
+    color: white;
     margin-left: 1rem;
 }
 
@@ -64,16 +60,16 @@
     display: flex;
     margin: 0 auto;
     /* background-color: white; */
-    border-top: 1px var(--main-yellow) solid;
+    /* border-top: 1px var(--main-yellow) solid; */
     border-bottom: 1px var(--main-yellow) solid;
 }
 
 .order-img{
-    border-right: var(--main-yellow) 1px solid;
+    /* border-right: var(--main-yellow) 1px solid; */
 }
 
 .order-information{
-    color: var(--main-yellow);
+    color: white;
 }
 
 .order-id,
@@ -102,3 +98,28 @@
 }
 
 
+
+
+#ul-sidenav > .lists-side:nth-child(2) > .active-sidebar{
+    background-color: #3d3d3d;
+    color: #f4bf00;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    width: 300px;
+    border-right: #f4bf00 4px  solid;
+}
+
+.active-sidebar:hover{
+    background-color: #3d3d3d;
+    color: #f4bf00;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    width: 300px;
+    border-right: #f4bf00 4px  solid;
+}
+
+
+
+.active-sidebar{
+    color: white;
+  }

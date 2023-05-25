@@ -30,7 +30,11 @@
       rel="stylesheet"
       href="/css/personal-pages/sidebar.css"
       type="text/css" />
-    <link rel="stylesheet" href="/css/navbar-footer.css" type="text/css" media="all"/>
+    <link
+      rel="stylesheet"
+      href="/css/navbar-footer.css"
+      type="text/css"
+      media="all" />
 
     <title>bank cards page</title>
   </head>
@@ -100,44 +104,39 @@
               </button>
             </div>
           </div>
-          
         </div>
       </div>
     </div>
     <!--  -->
 
-    <div class="container" id="side-bar__container">
+    <div class="container-fluid" id="side-bar__container">
       <div class="col-sm-12">
         <div class="row" id="page-main__row">
           <div class="col-sm-3">
             <div class="side-nav">
-              <span id="username">username</span>
               <ul class="nav" id="ul-sidenav">
                 <li class="lists-side">
-                  <a href="Profile.html" class="nav-link link-side">
+                  <a href="Profile.html" class="nav-link active-sidebar">
                     <i class="fa-regular fa-user fa-sm"></i> Profile
                   </a>
                 </li>
                 <li class="lists-side">
-                  <a href="orders.html" class="nav-link link-side">
+                  <a href="orders.html" class="nav-link active-sidebar">
                     <i class="bi bi-truck"></i> Orders
                   </a>
                 </li>
                 <li class="lists-side">
-                  <a href="cards.html" class="nav-link link-side">
+                  <a href="cards.html" class="nav-link active-sidebar">
                     <i class="fa-regular fa-credit-card"></i> card
                   </a>
                 </li>
                 <li class="lists-side">
-                  <a
-                    href="address.html"
-                    class="nav-link link-side"
-                    >
+                  <a href="address.html" class="nav-link active-sidebar">
                     <i class="fa-regular fa-address-card"></i> address
                   </a>
                 </li>
                 <li class="lists-side">
-                  <a href="security.html" class="nav-link link-side">
+                  <a href="security.html" class="nav-link active-sidebar">
                     <i class="bi bi-shield-shaded"></i> security
                   </a>
                 </li>
@@ -146,18 +145,17 @@
           </div>
 
           <div class="col-sm-9">
-            <div id="user-info">
-              <h5><i class="fa-regular fa-address-card"></i>address</h5>
-            </div>
-
             <div class="page-row">
-              <div id="btn-row">
-                <button
-                  class="add-card__btn"
-                  data-bs-toggle="modal"
-                  data-bs-target="#open-modal">
-                  add card
-                </button>
+              <div id="user-info">
+                <h5><i class="fa-regular fa-address-card"></i>address</h5>
+                <div id="btn-row">
+                  <button
+                    class="add-card__btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#open-modal">
+                    add card
+                  </button>
+                </div>
               </div>
 
               <!-- start of modal -->
@@ -230,84 +228,70 @@
                 </div>
               </div>
               <!-- end of modal -->
-
-              <div class="card">
-                <div class="card-body">
-                  <div class="card-title">address title</div>
-                  <div class="information-address">
-                    <span>name...</span>
-                    <span>city... </span>
-                    <span>street...</span>
-                    <span>phone... </span>
+              <div class="row card-row">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-title">address title</div>
+                    <div class="information-address">
+                      <span>name...</span>
+                      <span>city... </span>
+                      <span>street...</span>
+                      <span>phone... </span>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <button class="btn btn-primary footer-btn">Edit</button>
+                    <button class="btn btn-primary footer-btn">Delete</button>
                   </div>
                 </div>
-                <div class="card-footer">
-                  <button class="btn btn-primary footer-btn">Edit</button>
-                  <button class="btn btn-primary footer-btn">Delete</button>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-body">
-                  <div class="card-title">address title</div>
-                  <div class="information-address">
-                    <span>name...</span>
-                    <span>city... </span>
-                    <span>street...</span>
-                    <span>phone... </span>
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-title">address title</div>
+                    <div class="information-address">
+                      <span>name...</span>
+                      <span>city... </span>
+                      <span>street...</span>
+                      <span>phone... </span>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <button class="btn btn-primary footer-btn">Edit</button>
+                    <button class="btn btn-primary footer-btn">Delete</button>
                   </div>
                 </div>
-                <div class="card-footer">
-                  <button class="btn btn-primary footer-btn">Edit</button>
-                  <button class="btn btn-primary footer-btn">Delete</button>
-                </div>
               </div>
-              <div class="card">
-                <div class="card-body">
-                  <div class="card-title">address title</div>
-                  <div class="information-address">
-                    <span>name...</span>
-                    <span>city... </span>
-                    <span>street...</span>
-                    <span>phone... </span>
+              <div class="row card-row">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-title">address title</div>
+                    <div class="information-address">
+                      <span>name...</span>
+                      <span>city... </span>
+                      <span>street...</span>
+                      <span>phone... </span>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <button class="btn btn-primary footer-btn">Edit</button>
+                    <button class="btn btn-primary footer-btn">Delete</button>
                   </div>
                 </div>
-                <div class="card-footer">
-                  <button class="btn btn-primary footer-btn">Edit</button>
-                  <button class="btn btn-primary footer-btn">Delete</button>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-body">
-                  <div class="card-title">address title</div>
-                  <div class="information-address">
-                    <span>name...</span>
-                    <span>city... </span>
-                    <span>street...</span>
-                    <span>phone... </span>
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-title">address title</div>
+                    <div class="information-address">
+                      <span>name...</span>
+                      <span>city... </span>
+                      <span>street...</span>
+                      <span>phone... </span>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <button class="btn btn-primary footer-btn">Edit</button>
+                    <button class="btn btn-primary footer-btn">Delete</button>
                   </div>
                 </div>
-                <div class="card-footer">
-                  <button class="btn btn-primary footer-btn">Edit</button>
-                  <button class="btn btn-primary footer-btn">Delete</button>
-                </div>
               </div>
-              <!-- <div class="card">
-                <div class="card-header">
-                   <div class="card-title">address title</div>
-                </div>
-              <div class="card-body">
-               <div class="information-address"> 
-                  <span>name...</span>
-                  <span>city...  </span>
-                  <span>street...</span>
-                  <span>phone... </span>
-                </div>
-              </div>
-              <div class="card-footer">
-                <button class="btn btn-primary footer-btn">Edit</button>
-                <button class="btn btn-primary footer-btn">Delete</button>
-              </div>
-            </div> -->
             </div>
           </div>
         </div>

@@ -30,7 +30,11 @@
       rel="stylesheet"
       href="/css/personal-pages/sidebar.css"
       type="text/css" />
-    <link rel="stylesheet" href="/css/navbar-footer.css" type="text/css" media="all" />
+    <link
+      rel="stylesheet"
+      href="/css/navbar-footer.css"
+      type="text/css"
+      media="all" />
 
     <title>bank cards page</title>
     <script>
@@ -107,44 +111,40 @@
               </button>
             </div>
           </div>
-          
         </div>
       </div>
     </div>
     <!--  -->
 
-    <div class="container" id="side-bar__container">
+    <div class="container-fluid" id="side-bar__container">
       <div class="col-sm-12">
         <div class="row" id="page-main__row">
           <div class="col-sm-3">
             <div class="side-nav">
-              <span id="username">username</span>
+              <!-- <span id="username">username</span> -->
               <ul class="nav" id="ul-sidenav">
                 <li class="lists-side">
-                  <a href="Profile.html" class="nav-link link-side">
+                  <a href="Profile.html" class="nav-link active-sidebar">
                     <i class="fa-regular fa-user fa-sm"></i> Profile
                   </a>
                 </li>
                 <li class="lists-side">
-                  <a href="orders.html" class="nav-link link-side">
+                  <a href="orders.html" class="nav-link active-sidebar">
                     <i class="bi bi-truck"></i> Orders
                   </a>
                 </li>
                 <li class="lists-side">
-                  <a
-                    href="cards.html"
-                    class="nav-link link-side"
-                    >
+                  <a href="cards.html" class="nav-link active-sidebar">
                     <i class="fa-regular fa-credit-card"></i> card
                   </a>
                 </li>
                 <li class="lists-side">
-                  <a href="address.html" class="nav-link link-side">
+                  <a href="address.html" class="nav-link active-sidebar">
                     <i class="fa-regular fa-address-card"></i> address
                   </a>
                 </li>
                 <li class="lists-side">
-                  <a href="security.html" class="nav-link link-side">
+                  <a href="security.html" class="nav-link active-sidebar">
                     <i class="bi bi-shield-shaded"></i> security
                   </a>
                 </li>
@@ -153,19 +153,26 @@
           </div>
 
           <div class="col-sm-9">
-            <div id="user-info">
-              <h5><i class="fa-regular fa-credit-card"></i>Card</h5>
-            </div>
-
             <div class="page-row">
-              <div id="btn-row">
+              <div id="user-info">
+                <h5><i class="fa-regular fa-credit-card"></i>Card</h5>
+                <div id="btn-row">
+                  <button
+                    class="add-card__btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#open-modal">
+                    add card
+                  </button>
+                </div>
+              </div>
+              <!-- <div id="btn-row">
                 <button
                   class="add-card__btn"
                   data-bs-toggle="modal"
                   data-bs-target="#open-modal">
                   add card
                 </button>
-              </div>
+              </div> -->
 
               <!-- start of modal -->
               <div class="modal fade" id="open-modal">
@@ -183,7 +190,7 @@
                       <label for="" class="form-label">cardholder's name</label>
                       <input
                         type="text"
-                        class="form-control"
+                        class="input"
                         placeholder="name and surname" />
 
                       <label for="" class="form-label" id="credit-label"
@@ -191,16 +198,20 @@
                       >
                       <input
                         type="text"
-                        class="form-control"
+                        class="input"
                         placeholder="4444 4444 4444 4444" />
                       <div class="card-expiry">
                         <label for="" class="form-label">expirty date</label>
                         <div class="selecting">
-                          <select class="form-select" name="" id="">
+                          <select class="form-select" name="" id="month">
                             <option value="">month</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
                           </select>
 
-                          <select class="form-select" name="" id="">
+                          <select class="form-select" name="" id="year">
                             <option value="">year</option>
                           </select>
                         </div>
@@ -208,7 +219,7 @@
                       <label for="" class="form-label">security number</label>
                       <input
                         type="text"
-                        class="form-control"
+                        class="input"
                         placeholder="cvc/cvv" />
 
                       <div class="form-check">
@@ -217,83 +228,80 @@
                       </div>
 
                       <div class="save-cancel">
-                        <button class="btn btn-primary" id="save">save</button>
-                        <button class="btn btn-primary" id="cancel">
-                          cancel
-                        </button>
+                        <button id="save">save</button>
+                        <button id="cancel">cancel</button>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <!-- end of modal -->
-
-              <div class="card">
-                <div class="card-body">
-                  <span class="card-number"
-                    ><span>4444</span> **** **** <span>4444</span></span
-                  >
-                  <span class="card-name">name</span>
-                  <span class="card-icon">
-                    <img
-                      height="40"
-                      src="https://shoplineimg.com/assets/footer/card_master.png" />
-                  </span>
+              <div class="row card-row">
+                <div class="card">
+                  <div class="card-body">
+                    <span class="card-number"
+                      ><span>4444</span> **** **** <span>4444</span></span
+                    >
+                    <span class="card-name">name</span>
+                    <span class="card-icon">
+                      <img
+                        src="../img/Mastercard.png" />
+                    </span>
+                  </div>
+                  <div class="card-footer">
+                    <button class="footer-btn">Edit</button>
+                    <button class="footer-btn">Delete</button>
+                  </div>
                 </div>
-                <div class="card-footer">
-                  <button class="btn btn-primary footer-btn">Edit</button>
-                  <button class="btn btn-primary footer-btn">Delete</button>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-body">
-                  <span class="card-number"
-                    ><span>4444</span> **** **** <span>4444</span></span
-                  >
-                  <span class="card-name">name</span>
-                  <span class="card-icon"
-                    ><img
-                      height="40"
-                      src="https://shoplineimg.com/assets/footer/card_visa.png"
-                  /></span>
-                </div>
-                <div class="card-footer">
-                  <button class="btn btn-primary footer-btn">Edit</button>
-                  <button class="btn btn-primary footer-btn">Delete</button>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-body">
-                  <span class="card-number"
-                    ><span>4444</span> **** **** <span>4444</span></span
-                  >
-                  <span class="card-name">name</span>
-                  <span class="card-icon"
-                    ><img
-                      height="40"
-                      src="https://shoplineimg.com/assets/footer/card_visa.png"
-                  /></span>
-                </div>
-                <div class="card-footer">
-                  <button class="btn btn-primary footer-btn">Edit</button>
-                  <button class="btn btn-primary footer-btn">Delete</button>
+                <div class="card">
+                  <div class="card-body">
+                    <span class="card-number"
+                      ><span>4444</span> **** **** <span>4444</span></span
+                    >
+                    <span class="card-name">name</span>
+                    <span class="card-icon"
+                      ><img
+                        src="../img/Visa.png"
+                    /></span>
+                  </div>
+                  <div class="card-footer">
+                    <button class="footer-btn">Edit</button>
+                    <button class="footer-btn">Delete</button>
+                  </div>
                 </div>
               </div>
-              <div class="card">
-                <div class="card-body">
-                  <span class="card-number"
-                    ><span>4444</span> **** **** <span>4444</span></span
-                  >
-                  <span class="card-name">name</span>
-                  <span class="card-icon">
-                    <img
-                      height="40"
-                      src="https://shoplineimg.com/assets/footer/card_master.png" />
-                  </span>
+              <div class="row card-row">
+                <div class="card">
+                  <div class="card-body">
+                    <span class="card-number"
+                      ><span>4444</span> **** **** <span>4444</span></span
+                    >
+                    <span class="card-name">name</span>
+                    <span class="card-icon">
+                      <img
+                        src="../img/Visa.png" />
+                    </span>
+                  </div>
+                  <div class="card-footer">
+                    <button class="footer-btn">Edit</button>
+                    <button class="footer-btn">Delete</button>
+                  </div>
                 </div>
-                <div class="card-footer">
-                  <button class="btn btn-primary footer-btn">Edit</button>
-                  <button class="btn btn-primary footer-btn">Delete</button>
+                <div class="card">
+                  <div class="card-body">
+                    <span class="card-number"
+                      ><span>4444</span> **** **** <span>4444</span></span
+                    >
+                    <span class="card-name">name</span>
+                    <span class="card-icon"
+                      ><img
+                        src="../img/Mastercard.png"
+                    /></span>
+                  </div>
+                  <div class="card-footer">
+                    <button class="footer-btn">Edit</button>
+                    <button class="footer-btn">Delete</button>
+                  </div>
                 </div>
               </div>
             </div>

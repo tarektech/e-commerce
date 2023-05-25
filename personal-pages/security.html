@@ -102,37 +102,37 @@
     </div>
     <!--  -->
 
-    <div class="container" id="side-bar__container">
+    <div class="container-fluid" id="side-bar__container">
       <div class="col-sm-12">
         <div class="row" id="page-main__row">
           <div class="col-sm-3">
             <div class="side-nav">
-              <span id="username">username</span>
+              <!-- <span id="username">username</span> -->
               <ul class="nav" id="ul-sidenav">
                 <li class="lists-side">
-                  <a href="Profile.html" class="nav-link link-side">
+                  <a href="Profile.html" class="nav-link active-sidebar">
                     <i class="fa-regular fa-user fa-sm"></i> Profile
                   </a>
                 </li>
                 <li class="lists-side">
-                  <a href="orders.html" class="nav-link link-side">
+                  <a href="orders.html" class="nav-link active-sidebar">
                     <i class="bi bi-truck"></i> Orders
                   </a>
                 </li>
                 <li class="lists-side">
-                  <a href="cards.html" class="nav-link link-side">
+                  <a href="cards.html" class="nav-link active-sidebar">
                     <i class="fa-regular fa-credit-card"></i> card
                   </a>
                 </li>
                 <li class="lists-side">
-                  <a href="address.html" class="nav-link link-side">
+                  <a href="address.html" class="nav-link active-sidebar">
                     <i class="fa-regular fa-address-card"></i> address
                   </a>
                 </li>
                 <li class="lists-side">
                   <a
                     href="security.html"
-                    class="nav-link link-side"
+                    class="nav-link active-sidebar"
                     style="color: #f4bf00">
                     <i class="bi bi-shield-shaded"></i> security
                   </a>
@@ -142,11 +142,11 @@
           </div>
 
           <div class="col-sm-9">
-            <div id="user-info">
-              <h5><i class="bi bi-shield-shaded"></i>security</h5>
-            </div>
-
+            
             <div class="page-row">
+              <div id="user-info">
+                <h5><i class="bi bi-shield-shaded"></i>security</h5>
+              </div>
               <label id="change-password" for="">changing the password</label>
               <div class="old-password">
                 <label class="form-label" id="old-password-label"
@@ -169,8 +169,7 @@
                   >
                   <input
                     type="password"
-                    id="new-confirm-password-input"
-                    class="form-control"
+                    class="form-control new-confirm-password-input"
                     required />
                   <div class="form-text" id="new-confirm-password-text">
                     Must be 8-20 characters long.
@@ -183,17 +182,18 @@
                   >
                   <input
                     type="password"
-                    id="new-confirm-password-input"
-                    class="form-control"
+                    class="form-control new-confirm-password-input"
                     required />
                   <div class="form-text" id="new-confirm-password-text">
                     Must right same new password
                   </div>
                 </div>
               </div>
-              <button type="submit" id="save-btn" class="btn btn-primary">
-                Save
-              </button>
+              <div class="save-btn">
+                <button type="submit" id="save-btn" >
+                  Save
+                </button>
+              </div>
             </div>
           </div>
         </div>
