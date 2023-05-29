@@ -9,9 +9,9 @@ function closemenu(){
 function openclose(){
     var menu = document.getElementById('small-screen').style.width;
     if(menu == '0px'){
-        console.log("🚀 ~ file: script.js:12 ~ openclose ~ menu:", menu)
         openmenu();
     }else{
         closemenu();
     }
 }
+

@@ -12,7 +12,9 @@
 .top-main {
   background-color: #f1f1f1f1;
   height: 100px;
-  min-width: 1000px;
+  position: relative;
+  right: 0;
+  left: 0;
 }
 
 #logo {
@@ -167,8 +169,8 @@
     color: #f5c61b;
     color: white;
     font-weight: 500;
-    border-top:#f5c61b 1px solid;
-    margin-bottom: 0.5rem; 
+    border-top: #f5c61b 1px solid;
+    margin-bottom: 0.5rem;
   }
   .closebtn-holder {
     display: flex;
@@ -179,7 +181,6 @@
     font-size: 50px;
     color: #f5c61b;
   }
-  
 }
 
 /* end catog */

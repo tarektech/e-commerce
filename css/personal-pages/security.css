@@ -8,17 +8,12 @@
 
 /****************************************************************/
 
-
-/* right side */
-
 /* right side */
 #side-bar__container {
     /* background-color: red; */
     padding: 0 12px;
     height: 566px;
   }
-  
-  
   
   .page-row {
     height: 566px;
@@ -45,15 +40,12 @@
     display: flex;
   }
 
-
-/*  */
 #change-password{
     color: lightgrey;
     font-weight: 500;
     font-size: 1.2rem;
     padding-left: 5%;
     margin-top: 2%;
-
 }
 
 .old-password{
@@ -72,6 +64,7 @@
     width: fit-content;
     /* background-color: red; */
 }
+
 #old-password-input{
     width: 400px;
 }
@@ -120,9 +113,9 @@
     height: 50px;
     border: unset;
     border-radius: 15px;
-    color: #F5C61B;
+    color: black;
     z-index: 1;
-    background-color: #1a1a50;
+    background-color: white;
     position: relative;
     font-weight: 1000;
     font-size: 17px;
@@ -137,7 +130,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    
+  
     width: 140px;
     height: 50px;
     width: 0;
