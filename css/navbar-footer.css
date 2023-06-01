@@ -1,11 +1,4 @@
 /* navbar */
-:root {
-  --icons-borders: #588157;
-  --icon-hover: #3a5a40;
-  --menu-navbar: #faedcd;
-  --font-color: #444444;
-  --light-font: #394d49;
-}
 #logo-container {
   /* the code were at the html */
   height: 80px;

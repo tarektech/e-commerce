@@ -18,10 +18,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="/css/item-pages/card-item.css" type="text/css" />
-    <link rel="stylesheet" href="../css/navbar-footer.css" media="all" />
 
-    <!-- <link rel="stylesheet" href="/css/style.css" type="text/css" /> -->
-    <link rel="stylesheet" href="/css/navbar-footer.css" type="text/css" />
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
 
 
     <script>
@@ -40,119 +38,128 @@
 
   <body>
     <!-- main navbar -->
-    <div class="container-fluid container-xl">
-        <div class="col-sm-12 top-page">
-          <div class="row">
-            <!-- normal screens from 768px and greater -->
-  
-            <div class="nav-contaienr">
-              <div id="logo-container">
-                <a href="../index.html"
-                  ><img id="logo" src="/img/logo.png" alt="logo"
+    <div class="container-fluid">
+      <div class="col-sm-12 top-main">
+        <div class="row">
+          <div class="col-sm-3">
+            <a href="index.html"
+              ><img
+                id="logo"
+                src="/img/logo.png"
+                alt="logo"
+                style="height: 80px; max-height: 80px"
+            /></a>
+          </div>
+
+          <div class="col-sm-6">
+            <div class="searchbar">
+              <input id="serchbar" type="text" placeholder="Search here" />
+              <button>
+                <a id="search-btn" href="item-pages/search-page.html">
+                  <span class="fa-solid fa-magnifying-glass"></span>
+                </a>
+              </button>
+            </div>
+          </div>
+
+          <div class="col-sm-3 singin-singup">
+            <a href="signin-signout/Login-page.html"
+              ><button type="submit"><b>Sign In</b></button></a
+            >
+            <a href="signin-signout/signup-page-user.html"
+              ><button type="submit"><b>Sign Up</b></button></a
+            >
+            <a href="#"><span class="fa-solid fa-cart-shopping"></span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-12 top-main-small">
+        <div class="row">
+          <!-- containing the navbar for small screens -->
+          <!-- also display flex-column to make the searchbar below the logo and signin-signup buttons -->
+          <div class="small-navbar">
+            <!-- logo image and the right buttons to make them on same side -->
+            <div class="img-and-btn">
+              <div class="navbar navbar-expand-lg">
+                <!-- <button
+                  id="hamburger-btn"
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#small-screen">
+                  <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <span id="open-menu" onclick="openclose()" style="font-size: 50px; color: chocolate">&#9776;</span>
+                <!-- hamburger icon for small screens  -->
+              </div>
+
+              <div class="small-img">
+                <a href="#"
+                  ><img
+                    id="logo"
+                    src="img/logo.png"
+                    alt="logo"
+                    style="height: 80px; max-height: 80px"
                 /></a>
               </div>
-              <div class="searchbar">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input id="serchbar" type="text" placeholder="Search here" />
-  
-                <button type="button">
-                  <a id="search-btn" href="/majd2/Logo-Shop/search-page.html"
-                    ><b>Search</b></a
-                  >
-                </button>
-              </div>
               <div class="singin-singup">
-                <a href="/signin-signout/Login-page.html"
+                <a href="signin-signout/Login-page.html"
                   ><button type="submit"><b>Sign In</b></button></a
                 >
-                <a href="/signin-signout/signup-page-user.html"
+                <a href="signin-signout/signup-page-user.html"
                   ><button type="submit"><b>Sign Up</b></button></a
                 >
-                <a href="card-item.html"
-                  ><i class="fa-solid fa-cart-shopping"></i
-                ></a>
+                <a href="#"><span class="fa-solid fa-cart-shopping"></span></a>
               </div>
             </div>
-  
-            <!-- for only screens less than 768px -->
-            <div class="nav-contaienr-small navbar">
-              <div class="container-fluid nav-top-small">
-                <div id="logo-container-small">
-                  <!--  -->
-                  <button
-                    class="navbar-toggler collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#hamburger-menu-icon">
-                    <!-- hamburger icon -->
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <!--  -->
-  
-                  <a href="../index.html"
-                    ><img id="logo" src="/img/logo.png" alt="logo"
-                  /></a>
-                  <!-- list under the hamburger menu -->
-                  <nav
-                    class="navbar navbar-expand-sm navbar-collapse collapse navbar-small"
-                    id="hamburger-menu-icon">
-                    <ul class="navbar nav marke-color">
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Man</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Woman</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Girls-Boys</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">PORTFLO</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Phones</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">ELECTRONIC</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">SPORTS&OUTDOOR</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">New</a>
-                      </li>
-                    </ul>
-                  </nav>
-                  <!-- list under the hamburger menu -->
+            <!-- lists for small small screen -->
+            <!-- wehn clicking on hamburger icon the list below will display -->
+            <div  id="small-screen" class="menu">
+              <div id="side-menu">
+                <div class="closebtn-holder">
+                  <span class="closebtn" onclick="closemenu()">&times;</span>
                 </div>
-  
-                <div class="singin-singup">
-                  <a href="Login-page.html"
-                    ><button type="submit"><b>Sign In</b></button></a
-                  >
-                  <a href="signup-page-user.html"
-                    ><button type="submit"><b>Sign Up</b></button></a
-                  >
-                  <a href="/majd2/Logo-Shop/index.html"
-                    ><i class="fa-solid fa-cart-shopping"></i
-                  ></a>
-                </div>
+                <ul class="navbar nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Man</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Woman</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Girls-Boys</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">PORTFLO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Phones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ELECTRONIC</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">SPORTS&OUTDOOR</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">New</a>
+                  </li>
+                </ul>
               </div>
-  
-              <div class="searchbar">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input id="serchbar" type="text" placeholder="Search here" />
-  
-                <button type="button">
-                  <a id="search-btn" href="/majd2/Logo-Shop/search-page.html"
-                    ><b>Search</b></a
-                  >
-                </button>
-              </div>
+            </div>
+            <div class="searchbar">
+              <input id="serchbar" type="text" placeholder="Search here" />
+              <button>
+                <a id="search-btn" href="">
+                  <span class="fa-solid fa-magnifying-glass"></span>
+                </a>
+              </button>
             </div>
           </div>
         </div>
       </div>
+    </div>
     <!-- item 1 -->
     <br />
     <div class="container-fluid">
