@@ -156,8 +156,8 @@
     width: 150px;
     height: 170px;
     position: absolute;
-    right: 235px;
-    top: 60px;
+    right: 160px;
+    top: 70px;
     display: none;
 }
 
@@ -169,7 +169,7 @@
 }
 
 .text-pro a {
-    padding: 5%;
+    margin: 8px 0;
     text-decoration: none;
     color: #273c66;
 }
@@ -231,8 +231,17 @@ color: #fff;
 }
 
 .user-name {
-    color: #f4bf00;
+    color: #1a1a1a;
     text-decoration: none;
+    border: #1a1a1a 1px solid;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+}
+
+.user-name:hover {
+    color: #f5c61b;
+    text-decoration: none;
+    border: #f5c61b 1px solid;
 }
 
 .singin-singup {
@@ -241,25 +250,13 @@ color: #fff;
     align-items: center;
 }
 
-.user-name:hover {
-    color: #fff;
-    text-decoration: none;
-}
-
 .fa-heart {
-    color: #f4bf00;
+    color: #1a1a1a;
 }
 
-.fa-heart:hover {
-    color: #fff;
-}
-
-.fa-cart-shopping {
-    color: #f4bf00;
-}
-
+.fa-heart:hover,
 .fa-cart-shopping:hover {
-    color: #fff;
+    color: #f5c61b;
 }
 
 .marke {

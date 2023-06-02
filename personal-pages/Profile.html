@@ -30,9 +30,12 @@
       rel="stylesheet"
       href="/css/personal-pages/sidebar.css"
       type="text/css" />
-    <link rel="stylesheet" href="/css/navbar-footer.css" type="text/css" />
+    <link
+    rel="stylesheet"
+    href="/css/signin-signout/after-signin.css"
+    type="text/css" />
     <link rel="stylesheet" href="/css/style.css" type="text/css" />
-
+    
     <title>Profile</title>
     <script>
       $(document).ready(function () {
@@ -45,66 +48,112 @@
 
   <body>
     <!-- main navbar -->
-    <div class="container">
-      <div class="col-sm-12 top-page">
+    <div class="container-fluid">
+      <div class="col-sm-12 top-main">
         <div class="row">
-          <div class="nav-contaienr">
-            <div id="logo-container">
-              <a href="../index.html"
-                ><img id="logo" src="/img/logo.png" alt="logo"
-              /></a>
-            </div>
-            <div class="searchbar">
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <input id="serchbar" type="text" placeholder="Search here" />
+          <div class="col-sm-3">
+            <a href="../index.html"
+              ><img
+                id="logo"
+                src="/img/logo.png"
+                alt="logo"
+                style="height: 80px; max-height: 80px"
+            /></a>
+          </div>
 
-              <button type="button">
-                <a id="search-btn" href="/item-pages/search-page.html"
-                  ><b>Search</b></a
-                >
+          <div class="col-sm-6">
+            <div class="searchbar">
+              <input id="serchbar" type="text" placeholder="Search here" />
+              <button>
+                <a id="search-btn" href="/item-pages/search-page.html">
+                  <span class="fa-solid fa-magnifying-glass"></span>
+                </a>
               </button>
-            </div>
-            <div class="singin-singup">
-              <a href="/signin-singout/Login-page.html">
-                <a id="account" href="#" class="user-name"
-                  ><b>User Name</b> <i class="fa-solid fa-user"></i
-                ></a>
-              </a>
-              <a href="#"><i class="fa-solid fa-heart"></i></a>
-              <a href="../item-pages/card-item.html"
-                ><i class="fa-solid fa-cart-shopping"></i
-              ></a>
             </div>
           </div>
 
-          <div class="nav-contaienr-small">
-            <div class="container-fluid nav-top-small">
-              <div id="logo-container">
-                <a href="index.html"
-                  ><img id="logo" src="/img/logo.png" alt="logo"
-                /></a>
+          <div class="col-sm-3 singin-singup">
+            <a href="/signin-singout/Login-page.html">
+              <a id="account" href="#" class="user-name"
+                ><b>User Name</b> <i class="fa-solid fa-user"></i
+              ></a>
+            </a>
+            <a href="#"><i class="fa-solid fa-heart"></i></a>
+            <a href="../item-pages/card-item.html"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="drop-profile">
+        <div class="text-pro">
+          <a href="/personal-pages/Profile.html">Profile</a>
+          <a href="/personal-pages/orders.html">My Orders</a>
+          <a href="/personal-pages/address.html">Address</a>
+          <a href="#">Capons</a>
+        </div>
+      </div>
+
+      <div class="col-sm-12 top-main-small">
+        <div class="row">
+          <!-- containing the navbar for small screens -->
+          <!-- also display flex-column to make the searchbar below the logo and signin-signup buttons -->
+          <div class="small-navbar">
+            <!-- logo image and the right buttons to make them on same side -->
+            <div class="img-and-btn">
+              <div class="navbar navbar-expand-lg">
+                <!-- <button
+                  id="hamburger-btn"
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#small-screen">
+                  <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <span
+                  id="open-menu"
+                  onclick="openclose()"
+                  style="font-size: 50px; color: chocolate"
+                  >&#9776;</span
+                >
+                <!-- hamburger icon for small screens  -->
               </div>
 
+              <div class="small-img">
+                <a href="#"
+                  ><img
+                    id="logo"
+                    src="img/logo.png"
+                    alt="logo"
+                    style="height: 80px; max-height: 80px"
+                /></a>
+              </div>
               <div class="singin-singup">
-                <a href="/signin-singout/Login-page.html">
-                  <a id="account" href="#" class="user-name"
-                    ><b>User Name</b> <i class="fa-solid fa-user"></i
-                  ></a>
-                </a>
-                <a href="#"><i class="fa-solid fa-heart"></i></a>
-                <a href="../item-pages/card-item.html"
-                  ><i class="fa-solid fa-cart-shopping"></i
-                ></a>
+                <a href="signin-signout/Login-page.html"
+                  ><button type="submit"><b>Sign In</b></button></a
+                >
+                <a href="signin-signout/signup-page-user.html"
+                  ><button type="submit"><b>Sign Up</b></button></a
+                >
+                <a href="#"><span class="fa-solid fa-cart-shopping"></span></a>
+              </div>
+            </div>
+            <!-- lists for small small screen -->
+            <!-- wehn clicking on hamburger icon the list below will display -->
+            <div id="small-screen" class="menu">
+              <div id="side-menu">
+                <div class="closebtn-holder">
+                  <span class="closebtn" onclick="closemenu()">&times;</span>
+                </div>
               </div>
             </div>
             <div class="searchbar">
-              <i class="fa-solid fa-magnifying-glass"></i>
               <input id="serchbar" type="text" placeholder="Search here" />
-
-              <button type="button">
-                <a id="search-btn" href="/item-pages/search-page.html"
-                  ><b>Search</b></a
-                >
+              <button>
+                <a id="search-btn" href="">
+                  <span class="fa-solid fa-magnifying-glass"></span>
+                </a>
               </button>
             </div>
           </div>
