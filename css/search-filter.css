@@ -28,7 +28,6 @@
     height: 500px;
     margin-top: 1rem;
     margin-left: 1rem;
-    overflow-y: scroll;
 }
 
 .test{
@@ -74,14 +73,18 @@
 }
 
 /* tarek work */
-
+/* at 1266 and less the page crash */
 .cards-item{
-    display: flex;
-    width: 1200px;
-    margin: 0 auto;
-    justify-content: center;
-    flex-wrap: wrap;
+    width: 1000px;
     height: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-row{
+    display: flex;
 }
 
 .card{

@@ -25,8 +25,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
     <script src="js/script.js"></script>
+
+    <!-- new code -->
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="css/lib/owl.carousel.min.css"
+      type="text/css" />
+    <script src="js/lib/jquery-3.3.1.min.js"></script>
+    <script src="js/lib/main.js"></script>
+    <script src="js/lib/owl.carousel.min.js"></script>
     <title>shop</title>
   </head>
 
@@ -65,7 +75,9 @@
             <a href="signin-signout/signup-page-user.html"
               ><button type="submit"><b>Sign Up</b></button></a
             >
-            <a href="./item-pages/card-item.html"><span class="fa-solid fa-cart-shopping"></span></a>
+            <a href="./item-pages/card-item.html"
+              ><span class="fa-solid fa-cart-shopping"></span
+            ></a>
           </div>
         </div>
       </div>
@@ -78,8 +90,12 @@
             <!-- logo image and the right buttons to make them on same side -->
             <div class="img-and-btn">
               <div class="navbar navbar-expand-lg">
-              
-                <span id="open-menu" onclick="openclose()" style="font-size: 50px; color: chocolate">&#9776;</span>
+                <span
+                  id="open-menu"
+                  onclick="openclose()"
+                  style="font-size: 50px; color: chocolate"
+                  >&#9776;</span
+                >
                 <!-- hamburger icon for small screens  -->
               </div>
 
@@ -104,7 +120,7 @@
             </div>
             <!-- lists for small small screen -->
             <!-- wehn clicking on hamburger icon the list below will display -->
-            <div  id="small-screen" class="menu">
+            <div id="small-screen" class="menu">
               <div id="side-menu">
                 <div class="closebtn-holder">
                   <span class="closebtn" onclick="closemenu()">&times;</span>
@@ -194,143 +210,141 @@
     <div class="container-fluid">
       <div class="col-sm-12 slider-bg">
         <div class="row">
-          <div id="demo" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="brand-main">
-                  <div class="brand-main-photo">
-                    <a href="#"
-                      ><img src="img/Adidas_202301262144.webp" alt=""
-                    /></a>
-                    <span>Adidas</span>
-                  </div>
-                  <div class="brand-main-photo">
-                    <a href="#"
-                      ><img src="img/Defacto_202301270049.webp" alt=""
-                    /></a>
-                    <span>Defacto</span>
-                  </div>
-                  <div class="brand-main-photo">
-                    <a href="#"
-                      ><img src="img/Mavi_202301270522.webp" alt=""
-                    /></a>
-                    <span>Mavi</span>
-                  </div>
-                  <div class="brand-main-photo">
-                    <a href="#"
-                      ><img src="img/Nike_202301271540.webp" alt=""
-                    /></a>
-                    <span>Nike</span>
-                  </div>
-                  <div class="brand-main-photo">
-                    <a href="#"
-                      ><img src="img/Puma_202301271558.webp" alt=""
-                    /></a>
-                    <span>Puma</span>
-                  </div>
-                  <div class="brand-main-photo">
-                    <a href="#"
-                      ><img src="img/Avva_202301262152.webp" alt=""
-                    /></a>
-                    <span>Avva</span>
-                  </div>
-                  <div class="brand-main-photo">
-                    <a href="#"
-                      ><img src="img/Hummel_202301270232.webp" alt=""
-                    /></a>
-                    <span>Hummel</span>
-                  </div>
-                  <div class="brand-main-photo">
-                    <a href="#"
-                      ><img src="img/Skechers_202301271715.webp" alt=""
-                    /></a>
-                    <span>Skechers</span>
-                  </div>
-                  <div class="brand-main-photo">
-                    <a href="#"
-                      ><img src="img/JackJones_202301270326.webp" alt=""
-                    /></a>
-                    <span>JackJones</span>
-                  </div>
-                </div>
+          <!-- class="owl-2-style"> -->
+          <div id="demo" class="owl-2-style">
+            <!-- owl-carousel owl-2 -->
+              <div class="brand-main owl-carousel owl-2">
+              <div class="brand-main-photo">
+                <a href="#"
+                  ><img src="img/Adidas_202301262144.webp" alt=""
+                /></a>
+                <span>Adidas</span>
               </div>
 
-              <div class="carousel-item">
-                <div class="brand-main">
-                  <div class="brand-main-photo">
-                    <a href="#"
-                      ><img src="img/Adidas_202301262144.webp" alt=""
-                    /></a>
-                    <span>Adidas</span>
-                  </div>
-                  <div class="brand-main-photo">
-                    <a href="#"
-                      ><img src="img/Defacto_202301270049.webp" alt=""
-                    /></a>
-                    <span>Defacto</span>
-                  </div>
-                  <div class="brand-main-photo">
-                    <a href="#"
-                      ><img src="img/Mavi_202301270522.webp" alt=""
-                    /></a>
-                    <span>Mavi</span>
-                  </div>
-                  <div class="brand-main-photo">
-                    <a href="#"
-                      ><img src="img/Nike_202301271540.webp" alt=""
-                    /></a>
-                    <span>Nike</span>
-                  </div>
-                  <div class="brand-main-photo">
-                    <a href="#"
-                      ><img src="img/Puma_202301271558.webp" alt=""
-                    /></a>
-                    <span>Puma</span>
-                  </div>
-                  <div class="brand-main-photo">
-                    <a href="#"
-                      ><img src="img/Avva_202301262152.webp" alt=""
-                    /></a>
-                    <span>Avva</span>
-                  </div>
-                  <div class="brand-main-photo">
-                    <a href="#"
-                      ><img src="img/Hummel_202301270232.webp" alt=""
-                    /></a>
-                    <span>Hummel</span>
-                  </div>
-                  <div class="brand-main-photo">
-                    <a href="#"
-                      ><img src="img/Skechers_202301271715.webp" alt=""
-                    /></a>
-                    <span>Skechers</span>
-                  </div>
-                  <div class="brand-main-photo">
-                    <a href="#"
-                      ><img src="img/JackJones_202301270326.webp" alt=""
-                    /></a>
-                    <span>JackJones</span>
-                  </div>
-                </div>
+              <div class="brand-main-photo">
+                <a href="#"
+                  ><img src="img/Defacto_202301270049.webp" alt=""
+                /></a>
+                <span>Defacto</span>
+              </div>
+
+              <div class="brand-main-photo">
+                <a href="#"><img src="img/Mavi_202301270522.webp" alt="" /></a>
+                <span>Mavi</span>
+              </div>
+
+              <div class="brand-main-photo">
+                <a href="#"><img src="img/Nike_202301271540.webp" alt="" /></a>
+                <span>Nike</span>
+              </div>
+
+              <div class="brand-main-photo">
+                <a href="#"><img src="img/Puma_202301271558.webp" alt="" /></a>
+                <span>Puma</span>
+              </div>
+
+              <div class="brand-main-photo">
+                <a href="#"><img src="img/Avva_202301262152.webp" alt="" /></a>
+                <span>Avva</span>
+              </div>
+
+              <div class="brand-main-photo">
+                <a href="#"
+                  ><img src="img/Hummel_202301270232.webp" alt=""
+                /></a>
+                <span>Hummel</span>
+              </div>
+
+              <div class="brand-main-photo">
+                <a href="#"
+                  ><img src="img/Skechers_202301271715.webp" alt=""
+                /></a>
+                <span>Skechers</span>
+              </div>
+
+              <div class="brand-main-photo">
+                <a href="#"
+                  ><img src="img/JackJones_202301270326.webp" alt=""
+                /></a>
+                <span>JackJones</span>
               </div>
             </div>
-
-            <button
-              type="button"
-              class="carousel-control-prev"
-              data-bs-target="#demo"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-
-            <button
-              type="button"
-              class="carousel-control-next"
-              data-bs-target="#demo"
-              data-bs-slide="next">
-              <span id="icons-color" class="carousel-control-next-icon"></span>
-            </button>
+            <!-- 
+              <div class="items">
+                <div class="brand-main">
+                  <div class="brand-main-photo ">
+                    <a href="#"
+                      ><img src="img/Adidas_202301262144.webp" alt=""
+                    /></a>
+                    <span>Adidas</span>
+                  </div>
+                  <div class="brand-main-photo ">
+                    <a href="#"
+                      ><img src="img/Defacto_202301270049.webp" alt=""
+                    /></a>
+                    <span>Defacto</span>
+                  </div>
+                  <div class="brand-main-photo ">
+                    <a href="#"
+                      ><img src="img/Mavi_202301270522.webp" alt=""
+                    /></a>
+                    <span>Mavi</span>
+                  </div>
+                  <div class="brand-main-photo ">
+                    <a href="#"
+                      ><img src="img/Nike_202301271540.webp" alt=""
+                    /></a>
+                    <span>Nike</span>
+                  </div>
+                  <div class="brand-main-photo ">
+                    <a href="#"
+                      ><img src="img/Puma_202301271558.webp" alt=""
+                    /></a>
+                    <span>Puma</span>
+                  </div>
+                  <div class="brand-main-photo ">
+                    <a href="#"
+                      ><img src="img/Avva_202301262152.webp" alt=""
+                    /></a>
+                    <span>Avva</span>
+                  </div>
+                  <div class="brand-main-photo ">
+                    <a href="#"
+                      ><img src="img/Hummel_202301270232.webp" alt=""
+                    /></a>
+                    <span>Hummel</span>
+                  </div>
+                  <div class="brand-main-photo ">
+                    <a href="#"
+                      ><img src="img/Skechers_202301271715.webp" alt=""
+                    /></a>
+                    <span>Skechers</span>
+                  </div>
+                  <div class="brand-main-photo ">
+                    <a href="#"
+                      ><img src="img/JackJones_202301270326.webp" alt=""
+                    /></a>
+                    <span>JackJones</span>
+                  </div>
+                </div>
+              </div> -->
           </div>
+
+          <button
+            type="button"
+            class="carousel-control-prev"
+            data-bs-target="#demo"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+
+          <button
+            type="button"
+            class="carousel-control-next"
+            data-bs-target="#demo"
+            data-bs-slide="next">
+            <span id="icons-color" class="carousel-control-next-icon"></span>
+          </button>
         </div>
       </div>
     </div>
@@ -350,205 +364,219 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-3">
-            <div class="card-box">
-              <div class="img-show">
-                <div class="favo">
-                  <button><i class="fa-solid fa-heart-circle-plus"></i></button>
-                </div>
-
-                <a href="#"
-                  ><img
-                    class="img1"
-                    src="img/w71.webp"
-                    alt=""
-                    style="max-width: 100%"
-                /></a>
-                <div class="inner-img">
+          <div class="owl-carousel owl-2">
+            <!-- <div class="owl-2-style"> -->
+            <!-- owl-carousel owl-2 -->
+            <div class="col-sm-3">
+              <div class="card-box">
+                <div class="img-show">
                   <div class="favo">
                     <button>
                       <i class="fa-solid fa-heart-circle-plus"></i>
                     </button>
                   </div>
-                  <a href="#"
-                    ><img src="img/w72.webp" alt="" style="max-width: 100%"
-                  /></a>
-                </div>
-              </div>
-              <div class="card-dis">
-                <div class="name-item-starts">
-                  <span>T-Shirts</span>
 
-                  <div class="stars-item">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                  <a href="#"
+                    ><img
+                      class="img1"
+                      src="img/w71.webp"
+                      alt=""
+                      style="max-width: 100%"
+                  /></a>
+                  <div class="inner-img">
+                    <div class="favo">
+                      <button>
+                        <i class="fa-solid fa-heart-circle-plus"></i>
+                      </button>
+                    </div>
+                    <a href="#"
+                      ><img src="img/w72.webp" alt="" style="max-width: 100%"
+                    /></a>
                   </div>
                 </div>
+                <div class="card-dis">
+                  <div class="name-item-starts">
+                    <span>T-Shirts</span>
 
-                <h5>Basic Long Sleeve</h5>
-                <div class="box-line"></div>
-                <div class="price-cart">
-                  <span>11$</span>
-                  <a href="#">
-                    <i class="fa-solid fa-cart-plus"></i>
-                  </a>
+                    <div class="stars-item">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+
+                  <h5>Basic Long Sleeve</h5>
+                  <div class="box-line"></div>
+                  <div class="price-cart">
+                    <span>11$</span>
+                    <a href="#">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-sm-3">
-            <div class="card-box">
-              <div class="img-show">
-                <div class="favo">
-                  <button><i class="fa-solid fa-heart-circle-plus"></i></button>
-                </div>
-
-                <a href="#"
-                  ><img
-                    class="img1"
-                    src="img/w41.webp"
-                    alt=""
-                    style="max-width: 100%"
-                /></a>
-                <div class="inner-img">
+            <div class="col-sm-3">
+              <div class="card-box">
+                <div class="img-show">
                   <div class="favo">
                     <button>
                       <i class="fa-solid fa-heart-circle-plus"></i>
                     </button>
                   </div>
-                  <a href="#"
-                    ><img src="img/w42.webp" alt="" style="max-width: 100%"
-                  /></a>
-                </div>
-              </div>
-              <div class="card-dis">
-                <div class="name-item-starts">
-                  <span>T-Shirts</span>
 
-                  <div class="stars-item">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                  <a href="#"
+                    ><img
+                      class="img1"
+                      src="img/w41.webp"
+                      alt=""
+                      style="max-width: 100%"
+                  /></a>
+                  <div class="inner-img">
+                    <div class="favo">
+                      <button>
+                        <i class="fa-solid fa-heart-circle-plus"></i>
+                      </button>
+                    </div>
+                    <a href="#"
+                      ><img src="img/w42.webp" alt="" style="max-width: 100%"
+                    /></a>
                   </div>
                 </div>
+                <div class="card-dis">
+                  <div class="name-item-starts">
+                    <span>T-Shirts</span>
 
-                <h5>Wide Cotton Tunic</h5>
-                <div class="box-line"></div>
-                <div class="price-cart">
-                  <span>225$</span>
-                  <a href="#">
-                    <i class="fa-solid fa-cart-plus"></i>
-                  </a>
+                    <div class="stars-item">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+
+                  <h5>Wide Cotton Tunic</h5>
+                  <div class="box-line"></div>
+                  <div class="price-cart">
+                    <span>225$</span>
+                    <a href="#">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-sm-3">
-            <div class="card-box">
-              <div class="img-show">
-                <div class="favo">
-                  <button><i class="fa-solid fa-heart-circle-plus"></i></button>
-                </div>
-
-                <a href="#"
-                  ><img
-                    class="img1"
-                    src="img/w61.webp"
-                    alt=""
-                    style="max-width: 100%"
-                /></a>
-                <div class="inner-img">
+            <div class="col-sm-3">
+              <div class="card-box">
+                <div class="img-show">
                   <div class="favo">
                     <button>
                       <i class="fa-solid fa-heart-circle-plus"></i>
                     </button>
                   </div>
-                  <a href="#"
-                    ><img src="img/w62.webp" alt="" style="max-width: 100%"
-                  /></a>
-                </div>
-              </div>
-              <div class="card-dis">
-                <div class="name-item-starts">
-                  <span>T-Shirts</span>
 
-                  <div class="stars-item">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                  <a href="#"
+                    ><img
+                      class="img1"
+                      src="img/w61.webp"
+                      alt=""
+                      style="max-width: 100%"
+                  /></a>
+                  <div class="inner-img">
+                    <div class="favo">
+                      <button>
+                        <i class="fa-solid fa-heart-circle-plus"></i>
+                      </button>
+                    </div>
+                    <a href="#"
+                      ><img src="img/w62.webp" alt="" style="max-width: 100%"
+                    /></a>
                   </div>
                 </div>
+                <div class="card-dis">
+                  <div class="name-item-starts">
+                    <span>T-Shirts</span>
 
-                <h5>Crew Neck T-shirt</h5>
-                <div class="box-line"></div>
-                <div class="price-cart">
-                  <span>134$</span>
-                  <a href="#">
-                    <i class="fa-solid fa-cart-plus"></i>
-                  </a>
+                    <div class="stars-item">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+
+                  <h5>Crew Neck T-shirt</h5>
+                  <div class="box-line"></div>
+                  <div class="price-cart">
+                    <span>134$</span>
+                    <a href="#">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-sm-3">
-            <div class="card-box">
-              <div class="img-show">
-                <div class="favo">
-                  <button><i class="fa-solid fa-heart-circle-plus"></i></button>
-                </div>
-
-                <a href="#"
-                  ><img
-                    class="img1"
-                    src="img/w101.webp"
-                    alt=""
-                    style="max-width: 100%"
-                /></a>
-                <div class="inner-img">
+            <div class="col-sm-3">
+              <div class="card-box">
+                <div class="img-show">
                   <div class="favo">
                     <button>
                       <i class="fa-solid fa-heart-circle-plus"></i>
                     </button>
                   </div>
-                  <a href="#"
-                    ><img src="img/w102.webp" alt="" style="max-width: 100%"
-                  /></a>
-                </div>
-              </div>
-              <div class="card-dis">
-                <div class="name-item-starts">
-                  <span>T-Shirts</span>
 
-                  <div class="stars-item">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
+                  <a href="#"
+                    ><img
+                      class="img1"
+                      src="img/w101.webp"
+                      alt=""
+                      style="max-width: 100%"
+                  /></a>
+                  <div class="inner-img">
+                    <div class="favo">
+                      <button>
+                        <i class="fa-solid fa-heart-circle-plus"></i>
+                      </button>
+                    </div>
+                    <a href="#"
+                      ><img src="img/w102.webp" alt="" style="max-width: 100%"
+                    /></a>
                   </div>
                 </div>
+                <div class="card-dis">
+                  <div class="name-item-starts">
+                    <span>T-Shirts</span>
 
-                <h5>Tarot Garden Dress</h5>
-                <div class="box-line"></div>
-                <div class="price-cart">
-                  <span>129$</span>
-                  <a href="#">
-                    <i class="fa-solid fa-cart-plus"></i>
-                  </a>
+                    <div class="stars-item">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+
+                  <h5>Tarot Garden Dress</h5>
+                  <div class="box-line"></div>
+                  <div class="price-cart">
+                    <span>129$</span>
+                    <a href="#">
+                      <i class="fa-solid fa-cart-plus"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <!-- </div> -->
         </div>
       </div>
     </div>
@@ -567,7 +595,7 @@
                 sunt beatae libero labore nulla quos totam minima alias, aliquid
                 rerum quo consequuntur ut!
               </p>
-              <button>See More</button>
+              <button class="see-more">See More</button>
             </div>
             <div class="col-sm-9">
               <div id="demo" class="carousel slide" data-bs-ride="carousel">
