@@ -207,13 +207,13 @@
 
     <!-- brands slider -->
 
-    <div class="container-fluid">
+    <div class="container">
       <div class="col-sm-12 slider-bg">
         <div class="row">
           <!-- class="owl-2-style"> -->
           <div id="demo" class="owl-2-style">
             <!-- owl-carousel owl-2 -->
-              <div class="brand-main owl-carousel owl-2">
+            <div class="brand-main owl-carousel owl-2" id="container-holder">
               <div class="brand-main-photo">
                 <a href="#"
                   ><img src="img/Adidas_202301262144.webp" alt=""
@@ -329,22 +329,6 @@
                 </div>
               </div> -->
           </div>
-
-          <button
-            type="button"
-            class="carousel-control-prev"
-            data-bs-target="#demo"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-
-          <button
-            type="button"
-            class="carousel-control-next"
-            data-bs-target="#demo"
-            data-bs-slide="next">
-            <span id="icons-color" class="carousel-control-next-icon"></span>
-          </button>
         </div>
       </div>
     </div>
@@ -358,218 +342,233 @@
           <div class="top-slider-java">
             <div class="btn-slider-java">
               <h3>Java slider</h3>
-              <div class="btn-move">
-                <button><i class="fa-solid fa-chevron-left"></i></button>
-                <button><i class="fa-solid fa-chevron-right"></i></button>
-              </div>
-            </div>
-          </div>
-          <div class="owl-carousel owl-2">
-            <!-- <div class="owl-2-style"> -->
-            <!-- owl-carousel owl-2 -->
-            <div class="col-sm-3">
-              <div class="card-box">
-                <div class="img-show">
-                  <div class="favo">
-                    <button>
-                      <i class="fa-solid fa-heart-circle-plus"></i>
-                    </button>
-                  </div>
 
-                  <a href="#"
-                    ><img
-                      class="img1"
-                      src="img/w71.webp"
-                      alt=""
-                      style="max-width: 100%"
-                  /></a>
-                  <div class="inner-img">
+              <!--  -->
+              <!-- <div class="owl-nav btn-move" id="owl-nav1">
+                <button type="button" role="presentation" class="owl-prev">
+                  <span aria-label="Previous">‹</span></button
+                ><button type="button" role="presentation" class="owl-next">
+                  <span aria-label="Next">›</span>
+                </button>
+              </div> -->
+
+              <!-- <div class="btn-move">
+                <button><i class="fa-solid fa-chevron-left arrow"></i></button>
+                <button><i class="fa-solid fa-chevron-right arrow"></i></button>
+              </div> -->
+              <!-- <span id="line-devider"></span> -->
+            </div>
+            <div class="owl-carousel owl-theme owl-loaded owl-2" >
+              
+              <!-- <div class="owl-2-style"> -->
+              <!-- owl-carousel owl-2 -->
+              <div class="col-sm-3">
+                <div class="card-box">
+                  <div class="img-show">
                     <div class="favo">
                       <button>
                         <i class="fa-solid fa-heart-circle-plus"></i>
                       </button>
                     </div>
-                    <a href="#"
-                      ><img src="img/w72.webp" alt="" style="max-width: 100%"
-                    /></a>
-                  </div>
-                </div>
-                <div class="card-dis">
-                  <div class="name-item-starts">
-                    <span>T-Shirts</span>
 
-                    <div class="stars-item">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
+                    <a href="#"
+                      ><img
+                        class="img1"
+                        src="img/w71.webp"
+                        alt=""
+                        style="max-width: 100%"
+                    /></a>
+                    <div class="inner-img">
+                      <div class="favo">
+                        <button>
+                          <i class="fa-solid fa-heart-circle-plus"></i>
+                        </button>
+                      </div>
+                      <a href="#"
+                        ><img src="img/w72.webp" alt="" style="max-width: 100%"
+                      /></a>
                     </div>
                   </div>
+                  <div class="card-dis">
+                    <div class="name-item-starts">
+                      <span>T-Shirts</span>
 
-                  <h5>Basic Long Sleeve</h5>
-                  <div class="box-line"></div>
-                  <div class="price-cart">
-                    <span>11$</span>
-                    <a href="#">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </a>
+                      <div class="stars-item">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+
+                    <h5>Basic Long Sleeve</h5>
+                    <div class="box-line"></div>
+                    <div class="price-cart">
+                      <span>11$</span>
+                      <a href="#">
+                        <i class="fa-solid fa-cart-plus"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-sm-3">
-              <div class="card-box">
-                <div class="img-show">
-                  <div class="favo">
-                    <button>
-                      <i class="fa-solid fa-heart-circle-plus"></i>
-                    </button>
-                  </div>
-
-                  <a href="#"
-                    ><img
-                      class="img1"
-                      src="img/w41.webp"
-                      alt=""
-                      style="max-width: 100%"
-                  /></a>
-                  <div class="inner-img">
+              <div class="col-sm-3">
+                <div class="card-box">
+                  <div class="img-show">
                     <div class="favo">
                       <button>
                         <i class="fa-solid fa-heart-circle-plus"></i>
                       </button>
                     </div>
-                    <a href="#"
-                      ><img src="img/w42.webp" alt="" style="max-width: 100%"
-                    /></a>
-                  </div>
-                </div>
-                <div class="card-dis">
-                  <div class="name-item-starts">
-                    <span>T-Shirts</span>
 
-                    <div class="stars-item">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
+                    <a href="#"
+                      ><img
+                        class="img1"
+                        src="img/w41.webp"
+                        alt=""
+                        style="max-width: 100%"
+                    /></a>
+                    <div class="inner-img">
+                      <div class="favo">
+                        <button>
+                          <i class="fa-solid fa-heart-circle-plus"></i>
+                        </button>
+                      </div>
+                      <a href="#"
+                        ><img src="img/w42.webp" alt="" style="max-width: 100%"
+                      /></a>
                     </div>
                   </div>
+                  <div class="card-dis">
+                    <div class="name-item-starts">
+                      <span>T-Shirts</span>
 
-                  <h5>Wide Cotton Tunic</h5>
-                  <div class="box-line"></div>
-                  <div class="price-cart">
-                    <span>225$</span>
-                    <a href="#">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </a>
+                      <div class="stars-item">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+
+                    <h5>Wide Cotton Tunic</h5>
+                    <div class="box-line"></div>
+                    <div class="price-cart">
+                      <span>225$</span>
+                      <a href="#">
+                        <i class="fa-solid fa-cart-plus"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-sm-3">
-              <div class="card-box">
-                <div class="img-show">
-                  <div class="favo">
-                    <button>
-                      <i class="fa-solid fa-heart-circle-plus"></i>
-                    </button>
-                  </div>
-
-                  <a href="#"
-                    ><img
-                      class="img1"
-                      src="img/w61.webp"
-                      alt=""
-                      style="max-width: 100%"
-                  /></a>
-                  <div class="inner-img">
+              <div class="col-sm-3">
+                <div class="card-box">
+                  <div class="img-show">
                     <div class="favo">
                       <button>
                         <i class="fa-solid fa-heart-circle-plus"></i>
                       </button>
                     </div>
-                    <a href="#"
-                      ><img src="img/w62.webp" alt="" style="max-width: 100%"
-                    /></a>
-                  </div>
-                </div>
-                <div class="card-dis">
-                  <div class="name-item-starts">
-                    <span>T-Shirts</span>
 
-                    <div class="stars-item">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
+                    <a href="#"
+                      ><img
+                        class="img1"
+                        src="img/w61.webp"
+                        alt=""
+                        style="max-width: 100%"
+                    /></a>
+                    <div class="inner-img">
+                      <div class="favo">
+                        <button>
+                          <i class="fa-solid fa-heart-circle-plus"></i>
+                        </button>
+                      </div>
+                      <a href="#"
+                        ><img src="img/w62.webp" alt="" style="max-width: 100%"
+                      /></a>
                     </div>
                   </div>
+                  <div class="card-dis">
+                    <div class="name-item-starts">
+                      <span>T-Shirts</span>
 
-                  <h5>Crew Neck T-shirt</h5>
-                  <div class="box-line"></div>
-                  <div class="price-cart">
-                    <span>134$</span>
-                    <a href="#">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </a>
+                      <div class="stars-item">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+
+                    <h5>Crew Neck T-shirt</h5>
+                    <div class="box-line"></div>
+                    <div class="price-cart">
+                      <span>134$</span>
+                      <a href="#">
+                        <i class="fa-solid fa-cart-plus"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-sm-3">
-              <div class="card-box">
-                <div class="img-show">
-                  <div class="favo">
-                    <button>
-                      <i class="fa-solid fa-heart-circle-plus"></i>
-                    </button>
-                  </div>
-
-                  <a href="#"
-                    ><img
-                      class="img1"
-                      src="img/w101.webp"
-                      alt=""
-                      style="max-width: 100%"
-                  /></a>
-                  <div class="inner-img">
+              <div class="col-sm-3">
+                <div class="card-box">
+                  <div class="img-show">
                     <div class="favo">
                       <button>
                         <i class="fa-solid fa-heart-circle-plus"></i>
                       </button>
                     </div>
-                    <a href="#"
-                      ><img src="img/w102.webp" alt="" style="max-width: 100%"
-                    /></a>
-                  </div>
-                </div>
-                <div class="card-dis">
-                  <div class="name-item-starts">
-                    <span>T-Shirts</span>
 
-                    <div class="stars-item">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
+                    <a href="#"
+                      ><img
+                        class="img1"
+                        src="img/w101.webp"
+                        alt=""
+                        style="max-width: 100%"
+                    /></a>
+                    <div class="inner-img">
+                      <div class="favo">
+                        <button>
+                          <i class="fa-solid fa-heart-circle-plus"></i>
+                        </button>
+                      </div>
+                      <a href="#"
+                        ><img
+                          src="img/w102.webp"
+                          alt=""
+                          style="max-width: 100%"
+                      /></a>
                     </div>
                   </div>
+                  <div class="card-dis">
+                    <div class="name-item-starts">
+                      <span>T-Shirts</span>
 
-                  <h5>Tarot Garden Dress</h5>
-                  <div class="box-line"></div>
-                  <div class="price-cart">
-                    <span>129$</span>
-                    <a href="#">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </a>
+                      <div class="stars-item">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+
+                    <h5>Tarot Garden Dress</h5>
+                    <div class="box-line"></div>
+                    <div class="price-cart">
+                      <span>129$</span>
+                      <a href="#">
+                        <i class="fa-solid fa-cart-plus"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
